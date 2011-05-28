@@ -5,5 +5,7 @@
 *.mode1v3
 xcuserdata/
 build
-MobileCouchbase/Products/*
+MobileCouchbase/Products/*.bundle
+MobileCouchbase/Products/*.a
+MobileCouchbase/Products/*.h
 
