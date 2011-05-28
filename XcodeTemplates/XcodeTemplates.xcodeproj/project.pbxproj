@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E0351DD3138FFAF4003AACFE /* Install Project Templates */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E0351DD4138FFAF4003AACFE /* Build configuration list for PBXAggregateTarget "Install Project Templates" */;
+			buildPhases = (
+				E0351E24138FFB64003AACFE /* Copy Base Template */,
+				E0C230E213915F2600622500 /* Copy Couchbase.buncle to Base Template */,
+				E02209D01390008700FB8402 /* Copy Navigation-based Application Template */,
+				E02209D6139000DC00FB8402 /* Copy OpenGL ES Application Template */,
+				E02209E31390014F00FB8402 /* Copy Split View-based Application Template */,
+				E02209EB1390018800FB8402 /* Copy Tab Bar Application Template */,
+				E02209FA139001B500FB8402 /* Copy Utility Application Template */,
+				E0220A0F1390024D00FB8402 /* Copy View-based Application Template */,
+				E0220A04139001E200FB8402 /* Copy Window-based Application Template */,
+			);
+			dependencies = (
+			);
+			name = "Install Project Templates";
+			productName = "Install Project Templates";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E02209D1139000AC00FB8402 /* MainWindow.xib in Copy Navigation-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DDE138FFB2D003AACFE /* MainWindow.xib */; };
+		E02209D2139000AC00FB8402 /* RootViewController.xib in Copy Navigation-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DDF138FFB2D003AACFE /* RootViewController.xib */; };
+		E02209D3139000AC00FB8402 /* TemplateIcon.icns in Copy Navigation-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE0138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E02209D4139000AC00FB8402 /* TemplateInfo.plist in Copy Navigation-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE1138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E02209D5139000B100FB8402 /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld in Copy Navigation-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DDC138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld */; };
+		E02209D7139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE3138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */; };
+		E02209D8139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE4138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */; };
+		E02209D9139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE5138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib */; };
+		E02209DA139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE6138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib */; };
+		E02209DB139000F800FB8402 /* EAGLView.h in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE7138FFB2D003AACFE /* EAGLView.h */; };
+		E02209DC139000F800FB8402 /* EAGLView.m in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE8138FFB2D003AACFE /* EAGLView.m */; };
+		E02209DD139000F800FB8402 /* MainWindowiPad.xib in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DE9138FFB2D003AACFE /* MainWindowiPad.xib */; };
+		E02209DE139000F800FB8402 /* MainWindowiPhone.xib in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DEA138FFB2D003AACFE /* MainWindowiPhone.xib */; };
+		E02209DF139000F800FB8402 /* Shader.fsh in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DEB138FFB2D003AACFE /* Shader.fsh */; };
+		E02209E0139000F800FB8402 /* Shader.vsh in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DEC138FFB2D003AACFE /* Shader.vsh */; };
+		E02209E1139000F800FB8402 /* TemplateIcon.icns in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DED138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E02209E2139000F800FB8402 /* TemplateInfo.plist in Copy OpenGL ES Application Template */ = {isa = PBXBuildFile; fileRef = E0351DEE138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E02209E41390016B00FB8402 /* DetailView.xib in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF2138FFB2D003AACFE /* DetailView.xib */; };
+		E02209E51390016B00FB8402 /* DetailViewCoreData.xib in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF3138FFB2D003AACFE /* DetailViewCoreData.xib */; };
+		E02209E61390016B00FB8402 /* MainWindow.xib in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF4138FFB2D003AACFE /* MainWindow.xib */; };
+		E02209E71390016B00FB8402 /* MainWindowCoreData.xib in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF5138FFB2D003AACFE /* MainWindowCoreData.xib */; };
+		E02209E81390016B00FB8402 /* TemplateIcon.icns in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF6138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E02209E91390016B00FB8402 /* TemplateInfo.plist in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF7138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E02209EA1390017300FB8402 /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld in Copy Split View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF0138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld */; };
+		E02209EC139001A300FB8402 /* FirstViewController.h in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DF9138FFB2D003AACFE /* FirstViewController.h */; };
+		E02209ED139001A300FB8402 /* FirstViewControlleriPad.m in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DFA138FFB2D003AACFE /* FirstViewControlleriPad.m */; };
+		E02209EE139001A300FB8402 /* FirstViewControlleriPhone.m in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DFB138FFB2D003AACFE /* FirstViewControlleriPhone.m */; };
+		E02209EF139001A300FB8402 /* FirstViewiPad.xib in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DFC138FFB2D003AACFE /* FirstViewiPad.xib */; };
+		E02209F0139001A300FB8402 /* FirstViewiPhone.xib in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DFD138FFB2D003AACFE /* FirstViewiPhone.xib */; };
+		E02209F1139001A300FB8402 /* MainWindowiPad.xib in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DFE138FFB2D003AACFE /* MainWindowiPad.xib */; };
+		E02209F2139001A300FB8402 /* MainWindowiPhone.xib in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351DFF138FFB2D003AACFE /* MainWindowiPhone.xib */; };
+		E02209F3139001A300FB8402 /* SecondViewController.h in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E00138FFB2D003AACFE /* SecondViewController.h */; };
+		E02209F4139001A300FB8402 /* SecondViewControlleriPad.m in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E01138FFB2D003AACFE /* SecondViewControlleriPad.m */; };
+		E02209F5139001A300FB8402 /* SecondViewControlleriPhone.m in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E02138FFB2D003AACFE /* SecondViewControlleriPhone.m */; };
+		E02209F6139001A300FB8402 /* SecondViewiPad.xib in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E03138FFB2D003AACFE /* SecondViewiPad.xib */; };
+		E02209F7139001A300FB8402 /* SecondViewiPhone.xib in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E04138FFB2D003AACFE /* SecondViewiPhone.xib */; };
+		E02209F8139001A300FB8402 /* TemplateIcon.icns in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E05138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E02209F9139001A300FB8402 /* TemplateInfo.plist in Copy Tab Bar Application Template */ = {isa = PBXBuildFile; fileRef = E0351E06138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E0220A051390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.h in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E1A138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.h */; };
+		E0220A061390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.m in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E1B138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.m */; };
+		E0220A071390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.h in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E1C138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.h */; };
+		E0220A081390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.m in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E1D138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.m */; };
+		E0220A091390020600FB8402 /* MainWindow_iPad.xib in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E1E138FFB2D003AACFE /* MainWindow_iPad.xib */; };
+		E0220A0A1390020600FB8402 /* MainWindow_iPad_Universal.xib in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E1F138FFB2D003AACFE /* MainWindow_iPad_Universal.xib */; };
+		E0220A0B1390020600FB8402 /* MainWindow_iPhone.xib in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E20138FFB2D003AACFE /* MainWindow_iPhone.xib */; };
+		E0220A0C1390020600FB8402 /* MainWindow_iPhone_Universal.xib in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E21138FFB2D003AACFE /* MainWindow_iPhone_Universal.xib */; };
+		E0220A0D1390020600FB8402 /* TemplateIcon.icns in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E22138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E0220A0E1390020600FB8402 /* TemplateInfo.plist in Copy Window-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E23138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E0220A101390027E00FB8402 /* FlipsideView.xib in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E08138FFB2D003AACFE /* FlipsideView.xib */; };
+		E0220A111390027E00FB8402 /* FlipsideViewController.h in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E09138FFB2D003AACFE /* FlipsideViewController.h */; };
+		E0220A121390027E00FB8402 /* FlipsideViewController.m in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E0A138FFB2D003AACFE /* FlipsideViewController.m */; };
+		E0220A131390027E00FB8402 /* MainView.xib in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E0B138FFB2D003AACFE /* MainView.xib */; };
+		E0220A141390027E00FB8402 /* MainWindow.xib in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E0C138FFB2D003AACFE /* MainWindow.xib */; };
+		E0220A151390027E00FB8402 /* TemplateIcon.icns in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E0D138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E0220A161390027E00FB8402 /* TemplateInfo.plist in Copy Utility Application Template */ = {isa = PBXBuildFile; fileRef = E0351E0E138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E0220A171390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E10138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */; };
+		E0220A181390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.m in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E11138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.m */; };
+		E0220A191390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E12138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib */; };
+		E0220A1A1390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.m in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E13138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.m */; };
+		E0220A1B1390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E14138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib */; };
+		E0220A1C1390029500FB8402 /* MainWindowiPad.xib in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E15138FFB2D003AACFE /* MainWindowiPad.xib */; };
+		E0220A1D1390029500FB8402 /* MainWindowiPhone.xib in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E16138FFB2D003AACFE /* MainWindowiPhone.xib */; };
+		E0220A1E1390029500FB8402 /* TemplateIcon.icns in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E17138FFB2D003AACFE /* TemplateIcon.icns */; };
+		E0220A1F1390029500FB8402 /* TemplateInfo.plist in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E18138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */; };
+		E0351E26138FFB91003AACFE /* futon.bundle in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0351DD9138FFB2D003AACFE /* futon.bundle */; };
+		E0C230C613915D1F00622500 /* Couchbase.h in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C013915D1200622500 /* Couchbase.h */; };
+		E0C230C713915D1F00622500 /* libCouchbase-iphoneos.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C113915D1200622500 /* libCouchbase-iphoneos.a */; };
+		E0C230C813915D1F00622500 /* libCouchbase-iphonesimulator.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C213915D1200622500 /* libCouchbase-iphonesimulator.a */; };
+		E0C230C913915D1F00622500 /* libTouchJSON-iphoneos.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C313915D1200622500 /* libTouchJSON-iphoneos.a */; };
+		E0C230CA13915D1F00622500 /* libTouchJSON-iphonesimulator.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C413915D1200622500 /* libTouchJSON-iphonesimulator.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E02209D01390008700FB8402 /* Copy Navigation-based Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Navigation-based Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E02209D1139000AC00FB8402 /* MainWindow.xib in Copy Navigation-based Application Template */,
+				E02209D2139000AC00FB8402 /* RootViewController.xib in Copy Navigation-based Application Template */,
+				E02209D5139000B100FB8402 /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld in Copy Navigation-based Application Template */,
+				E02209D3139000AC00FB8402 /* TemplateIcon.icns in Copy Navigation-based Application Template */,
+				E02209D4139000AC00FB8402 /* TemplateInfo.plist in Copy Navigation-based Application Template */,
+			);
+			name = "Copy Navigation-based Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02209D6139000DC00FB8402 /* Copy OpenGL ES Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase OpenGL ES Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E02209D7139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h in Copy OpenGL ES Application Template */,
+				E02209D8139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewController.m in Copy OpenGL ES Application Template */,
+				E02209D9139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib in Copy OpenGL ES Application Template */,
+				E02209DA139000F800FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib in Copy OpenGL ES Application Template */,
+				E02209DB139000F800FB8402 /* EAGLView.h in Copy OpenGL ES Application Template */,
+				E02209DC139000F800FB8402 /* EAGLView.m in Copy OpenGL ES Application Template */,
+				E02209DD139000F800FB8402 /* MainWindowiPad.xib in Copy OpenGL ES Application Template */,
+				E02209DE139000F800FB8402 /* MainWindowiPhone.xib in Copy OpenGL ES Application Template */,
+				E02209DF139000F800FB8402 /* Shader.fsh in Copy OpenGL ES Application Template */,
+				E02209E0139000F800FB8402 /* Shader.vsh in Copy OpenGL ES Application Template */,
+				E02209E1139000F800FB8402 /* TemplateIcon.icns in Copy OpenGL ES Application Template */,
+				E02209E2139000F800FB8402 /* TemplateInfo.plist in Copy OpenGL ES Application Template */,
+			);
+			name = "Copy OpenGL ES Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02209E31390014F00FB8402 /* Copy Split View-based Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Split View-based Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E02209E41390016B00FB8402 /* DetailView.xib in Copy Split View-based Application Template */,
+				E02209E51390016B00FB8402 /* DetailViewCoreData.xib in Copy Split View-based Application Template */,
+				E02209E61390016B00FB8402 /* MainWindow.xib in Copy Split View-based Application Template */,
+				E02209E71390016B00FB8402 /* MainWindowCoreData.xib in Copy Split View-based Application Template */,
+				E02209E81390016B00FB8402 /* TemplateIcon.icns in Copy Split View-based Application Template */,
+				E02209EA1390017300FB8402 /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld in Copy Split View-based Application Template */,
+				E02209E91390016B00FB8402 /* TemplateInfo.plist in Copy Split View-based Application Template */,
+			);
+			name = "Copy Split View-based Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02209EB1390018800FB8402 /* Copy Tab Bar Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Tab Bar Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E02209EC139001A300FB8402 /* FirstViewController.h in Copy Tab Bar Application Template */,
+				E02209ED139001A300FB8402 /* FirstViewControlleriPad.m in Copy Tab Bar Application Template */,
+				E02209EE139001A300FB8402 /* FirstViewControlleriPhone.m in Copy Tab Bar Application Template */,
+				E02209EF139001A300FB8402 /* FirstViewiPad.xib in Copy Tab Bar Application Template */,
+				E02209F0139001A300FB8402 /* FirstViewiPhone.xib in Copy Tab Bar Application Template */,
+				E02209F1139001A300FB8402 /* MainWindowiPad.xib in Copy Tab Bar Application Template */,
+				E02209F2139001A300FB8402 /* MainWindowiPhone.xib in Copy Tab Bar Application Template */,
+				E02209F3139001A300FB8402 /* SecondViewController.h in Copy Tab Bar Application Template */,
+				E02209F4139001A300FB8402 /* SecondViewControlleriPad.m in Copy Tab Bar Application Template */,
+				E02209F5139001A300FB8402 /* SecondViewControlleriPhone.m in Copy Tab Bar Application Template */,
+				E02209F6139001A300FB8402 /* SecondViewiPad.xib in Copy Tab Bar Application Template */,
+				E02209F7139001A300FB8402 /* SecondViewiPhone.xib in Copy Tab Bar Application Template */,
+				E02209F8139001A300FB8402 /* TemplateIcon.icns in Copy Tab Bar Application Template */,
+				E02209F9139001A300FB8402 /* TemplateInfo.plist in Copy Tab Bar Application Template */,
+			);
+			name = "Copy Tab Bar Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02209FA139001B500FB8402 /* Copy Utility Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utility Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E0220A101390027E00FB8402 /* FlipsideView.xib in Copy Utility Application Template */,
+				E0220A111390027E00FB8402 /* FlipsideViewController.h in Copy Utility Application Template */,
+				E0220A121390027E00FB8402 /* FlipsideViewController.m in Copy Utility Application Template */,
+				E0220A131390027E00FB8402 /* MainView.xib in Copy Utility Application Template */,
+				E0220A141390027E00FB8402 /* MainWindow.xib in Copy Utility Application Template */,
+				E0220A151390027E00FB8402 /* TemplateIcon.icns in Copy Utility Application Template */,
+				E0220A161390027E00FB8402 /* TemplateInfo.plist in Copy Utility Application Template */,
+			);
+			name = "Copy Utility Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0220A04139001E200FB8402 /* Copy Window-based Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Window-based Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E0220A051390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.h in Copy Window-based Application Template */,
+				E0220A061390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.m in Copy Window-based Application Template */,
+				E0220A071390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.h in Copy Window-based Application Template */,
+				E0220A081390020600FB8402 /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.m in Copy Window-based Application Template */,
+				E0220A091390020600FB8402 /* MainWindow_iPad.xib in Copy Window-based Application Template */,
+				E0220A0A1390020600FB8402 /* MainWindow_iPad_Universal.xib in Copy Window-based Application Template */,
+				E0220A0B1390020600FB8402 /* MainWindow_iPhone.xib in Copy Window-based Application Template */,
+				E0220A0C1390020600FB8402 /* MainWindow_iPhone_Universal.xib in Copy Window-based Application Template */,
+				E0220A0D1390020600FB8402 /* TemplateIcon.icns in Copy Window-based Application Template */,
+				E0220A0E1390020600FB8402 /* TemplateInfo.plist in Copy Window-based Application Template */,
+			);
+			name = "Copy Window-based Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0220A0F1390024D00FB8402 /* Copy View-based Application Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase View-based Application.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E0220A171390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewController.h in Copy View-based Application Template */,
+				E0220A181390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.m in Copy View-based Application Template */,
+				E0220A191390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib in Copy View-based Application Template */,
+				E0220A1A1390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.m in Copy View-based Application Template */,
+				E0220A1B1390029500FB8402 /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib in Copy View-based Application Template */,
+				E0220A1C1390029500FB8402 /* MainWindowiPad.xib in Copy View-based Application Template */,
+				E0220A1D1390029500FB8402 /* MainWindowiPhone.xib in Copy View-based Application Template */,
+				E0220A1E1390029500FB8402 /* TemplateIcon.icns in Copy View-based Application Template */,
+				E0220A1F1390029500FB8402 /* TemplateInfo.plist in Copy View-based Application Template */,
+			);
+			name = "Copy View-based Application Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0351E24138FFB64003AACFE /* Copy Base Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Base.xctemplate/";
+			dstSubfolderSpec = 0;
+			files = (
+				E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */,
+				E0C230C613915D1F00622500 /* Couchbase.h in Copy Base Template */,
+				E0C230C713915D1F00622500 /* libCouchbase-iphoneos.a in Copy Base Template */,
+				E0C230C813915D1F00622500 /* libCouchbase-iphonesimulator.a in Copy Base Template */,
+				E0C230C913915D1F00622500 /* libTouchJSON-iphoneos.a in Copy Base Template */,
+				E0C230CA13915D1F00622500 /* libTouchJSON-iphonesimulator.a in Copy Base Template */,
+				E0351E26138FFB91003AACFE /* futon.bundle in Copy Base Template */,
+			);
+			name = "Copy Base Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E0351DD9138FFB2D003AACFE /* futon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = futon.bundle; sourceTree = "<group>"; };
+		E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351DDD138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "___PACKAGENAMEASIDENTIFIER___.xcdatamodel"; sourceTree = "<group>"; };
+		E0351DDE138FFB2D003AACFE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		E0351DDF138FFB2D003AACFE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		E0351DE0138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351DE1138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351DE3138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PACKAGENAMEASIDENTIFIER___ViewController.h"; sourceTree = "<group>"; };
+		E0351DE4138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___ViewController.m"; sourceTree = "<group>"; };
+		E0351DE5138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib"; sourceTree = "<group>"; };
+		E0351DE6138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib"; sourceTree = "<group>"; };
+		E0351DE7138FFB2D003AACFE /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		E0351DE8138FFB2D003AACFE /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		E0351DE9138FFB2D003AACFE /* MainWindowiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPad.xib; sourceTree = "<group>"; };
+		E0351DEA138FFB2D003AACFE /* MainWindowiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPhone.xib; sourceTree = "<group>"; };
+		E0351DEB138FFB2D003AACFE /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		E0351DEC138FFB2D003AACFE /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		E0351DED138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351DEE138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351DF1138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "___PACKAGENAMEASIDENTIFIER___.xcdatamodel"; sourceTree = "<group>"; };
+		E0351DF2138FFB2D003AACFE /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		E0351DF3138FFB2D003AACFE /* DetailViewCoreData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewCoreData.xib; sourceTree = "<group>"; };
+		E0351DF4138FFB2D003AACFE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		E0351DF5138FFB2D003AACFE /* MainWindowCoreData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowCoreData.xib; sourceTree = "<group>"; };
+		E0351DF6138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351DF7138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351DF9138FFB2D003AACFE /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E0351DFA138FFB2D003AACFE /* FirstViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewControlleriPad.m; sourceTree = "<group>"; };
+		E0351DFB138FFB2D003AACFE /* FirstViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewControlleriPhone.m; sourceTree = "<group>"; };
+		E0351DFC138FFB2D003AACFE /* FirstViewiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewiPad.xib; sourceTree = "<group>"; };
+		E0351DFD138FFB2D003AACFE /* FirstViewiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewiPhone.xib; sourceTree = "<group>"; };
+		E0351DFE138FFB2D003AACFE /* MainWindowiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPad.xib; sourceTree = "<group>"; };
+		E0351DFF138FFB2D003AACFE /* MainWindowiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPhone.xib; sourceTree = "<group>"; };
+		E0351E00138FFB2D003AACFE /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E0351E01138FFB2D003AACFE /* SecondViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewControlleriPad.m; sourceTree = "<group>"; };
+		E0351E02138FFB2D003AACFE /* SecondViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewControlleriPhone.m; sourceTree = "<group>"; };
+		E0351E03138FFB2D003AACFE /* SecondViewiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewiPad.xib; sourceTree = "<group>"; };
+		E0351E04138FFB2D003AACFE /* SecondViewiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewiPhone.xib; sourceTree = "<group>"; };
+		E0351E05138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351E06138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351E08138FFB2D003AACFE /* FlipsideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
+		E0351E09138FFB2D003AACFE /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		E0351E0A138FFB2D003AACFE /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		E0351E0B138FFB2D003AACFE /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		E0351E0C138FFB2D003AACFE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		E0351E0D138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351E0E138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351E10138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PACKAGENAMEASIDENTIFIER___ViewController.h"; sourceTree = "<group>"; };
+		E0351E11138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.m"; sourceTree = "<group>"; };
+		E0351E12138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib"; sourceTree = "<group>"; };
+		E0351E13138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.m"; sourceTree = "<group>"; };
+		E0351E14138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib"; sourceTree = "<group>"; };
+		E0351E15138FFB2D003AACFE /* MainWindowiPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPad.xib; sourceTree = "<group>"; };
+		E0351E16138FFB2D003AACFE /* MainWindowiPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowiPhone.xib; sourceTree = "<group>"; };
+		E0351E17138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351E18138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0351E1A138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.h"; sourceTree = "<group>"; };
+		E0351E1B138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.m"; sourceTree = "<group>"; };
+		E0351E1C138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.h"; sourceTree = "<group>"; };
+		E0351E1D138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.m"; sourceTree = "<group>"; };
+		E0351E1E138FFB2D003AACFE /* MainWindow_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
+		E0351E1F138FFB2D003AACFE /* MainWindow_iPad_Universal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPad_Universal.xib; sourceTree = "<group>"; };
+		E0351E20138FFB2D003AACFE /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		E0351E21138FFB2D003AACFE /* MainWindow_iPhone_Universal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPhone_Universal.xib; sourceTree = "<group>"; };
+		E0351E22138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
+		E0351E23138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
+		E0C230BF13915D1200622500 /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Couchbase.bundle; path = ../MobileCouchbase/Products/Couchbase.bundle; sourceTree = "<group>"; };
+		E0C230C013915D1200622500 /* Couchbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Couchbase.h; path = ../MobileCouchbase/Products/Couchbase.h; sourceTree = "<group>"; };
+		E0C230C113915D1200622500 /* libCouchbase-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCouchbase-iphoneos.a"; path = "../MobileCouchbase/Products/libCouchbase-iphoneos.a"; sourceTree = "<group>"; };
+		E0C230C213915D1200622500 /* libCouchbase-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCouchbase-iphonesimulator.a"; path = "../MobileCouchbase/Products/libCouchbase-iphonesimulator.a"; sourceTree = "<group>"; };
+		E0C230C313915D1200622500 /* libTouchJSON-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTouchJSON-iphoneos.a"; path = "../MobileCouchbase/Products/libTouchJSON-iphoneos.a"; sourceTree = "<group>"; };
+		E0C230C413915D1200622500 /* libTouchJSON-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTouchJSON-iphonesimulator.a"; path = "../MobileCouchbase/Products/libTouchJSON-iphonesimulator.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E02209C3138FFC6300FB8402 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E0C230BF13915D1200622500 /* Couchbase.bundle */,
+				E0C230C013915D1200622500 /* Couchbase.h */,
+				E0C230C113915D1200622500 /* libCouchbase-iphoneos.a */,
+				E0C230C213915D1200622500 /* libCouchbase-iphonesimulator.a */,
+				E0C230C313915D1200622500 /* libTouchJSON-iphoneos.a */,
+				E0C230C413915D1200622500 /* libTouchJSON-iphonesimulator.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		E0351DCA138FFAB0003AACFE = {
+			isa = PBXGroup;
+			children = (
+				E02209C3138FFC6300FB8402 /* Libraries */,
+				E0351DD7138FFB2D003AACFE /* Templates */,
+			);
+			sourceTree = "<group>";
+		};
+		E0351DD7138FFB2D003AACFE /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				E0351DD8138FFB2D003AACFE /* Couchbase Base.xctemplate */,
+				E0351DDB138FFB2D003AACFE /* Couchbase Navigation-based Application.xctemplate */,
+				E0351DE2138FFB2D003AACFE /* Couchbase OpenGL ES Application.xctemplate */,
+				E0351DEF138FFB2D003AACFE /* Couchbase Split View-based Application.xctemplate */,
+				E0351DF8138FFB2D003AACFE /* Couchbase Tab Bar Application.xctemplate */,
+				E0351E07138FFB2D003AACFE /* Couchbase Utility Application.xctemplate */,
+				E0351E0F138FFB2D003AACFE /* Couchbase View-based Application.xctemplate */,
+				E0351E19138FFB2D003AACFE /* Couchbase Window-based Application.xctemplate */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		E0351DD8138FFB2D003AACFE /* Couchbase Base.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351DD9138FFB2D003AACFE /* futon.bundle */,
+				E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Base.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351DDB138FFB2D003AACFE /* Couchbase Navigation-based Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351DDC138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld */,
+				E0351DDE138FFB2D003AACFE /* MainWindow.xib */,
+				E0351DDF138FFB2D003AACFE /* RootViewController.xib */,
+				E0351DE0138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351DE1138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Navigation-based Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351DE2138FFB2D003AACFE /* Couchbase OpenGL ES Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351DE3138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */,
+				E0351DE4138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.m */,
+				E0351DE5138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib */,
+				E0351DE6138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib */,
+				E0351DE7138FFB2D003AACFE /* EAGLView.h */,
+				E0351DE8138FFB2D003AACFE /* EAGLView.m */,
+				E0351DE9138FFB2D003AACFE /* MainWindowiPad.xib */,
+				E0351DEA138FFB2D003AACFE /* MainWindowiPhone.xib */,
+				E0351DEB138FFB2D003AACFE /* Shader.fsh */,
+				E0351DEC138FFB2D003AACFE /* Shader.vsh */,
+				E0351DED138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351DEE138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase OpenGL ES Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351DEF138FFB2D003AACFE /* Couchbase Split View-based Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351DF0138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld */,
+				E0351DF2138FFB2D003AACFE /* DetailView.xib */,
+				E0351DF3138FFB2D003AACFE /* DetailViewCoreData.xib */,
+				E0351DF4138FFB2D003AACFE /* MainWindow.xib */,
+				E0351DF5138FFB2D003AACFE /* MainWindowCoreData.xib */,
+				E0351DF6138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351DF7138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Split View-based Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351DF8138FFB2D003AACFE /* Couchbase Tab Bar Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351DF9138FFB2D003AACFE /* FirstViewController.h */,
+				E0351DFA138FFB2D003AACFE /* FirstViewControlleriPad.m */,
+				E0351DFB138FFB2D003AACFE /* FirstViewControlleriPhone.m */,
+				E0351DFC138FFB2D003AACFE /* FirstViewiPad.xib */,
+				E0351DFD138FFB2D003AACFE /* FirstViewiPhone.xib */,
+				E0351DFE138FFB2D003AACFE /* MainWindowiPad.xib */,
+				E0351DFF138FFB2D003AACFE /* MainWindowiPhone.xib */,
+				E0351E00138FFB2D003AACFE /* SecondViewController.h */,
+				E0351E01138FFB2D003AACFE /* SecondViewControlleriPad.m */,
+				E0351E02138FFB2D003AACFE /* SecondViewControlleriPhone.m */,
+				E0351E03138FFB2D003AACFE /* SecondViewiPad.xib */,
+				E0351E04138FFB2D003AACFE /* SecondViewiPhone.xib */,
+				E0351E05138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351E06138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Tab Bar Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351E07138FFB2D003AACFE /* Couchbase Utility Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351E08138FFB2D003AACFE /* FlipsideView.xib */,
+				E0351E09138FFB2D003AACFE /* FlipsideViewController.h */,
+				E0351E0A138FFB2D003AACFE /* FlipsideViewController.m */,
+				E0351E0B138FFB2D003AACFE /* MainView.xib */,
+				E0351E0C138FFB2D003AACFE /* MainWindow.xib */,
+				E0351E0D138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351E0E138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Utility Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351E0F138FFB2D003AACFE /* Couchbase View-based Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351E10138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewController.h */,
+				E0351E11138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.m */,
+				E0351E12138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib */,
+				E0351E13138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.m */,
+				E0351E14138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib */,
+				E0351E15138FFB2D003AACFE /* MainWindowiPad.xib */,
+				E0351E16138FFB2D003AACFE /* MainWindowiPhone.xib */,
+				E0351E17138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351E18138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase View-based Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E0351E19138FFB2D003AACFE /* Couchbase Window-based Application.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E0351E1A138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.h */,
+				E0351E1B138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPad.m */,
+				E0351E1C138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.h */,
+				E0351E1D138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___AppDelegate_iPhone.m */,
+				E0351E1E138FFB2D003AACFE /* MainWindow_iPad.xib */,
+				E0351E1F138FFB2D003AACFE /* MainWindow_iPad_Universal.xib */,
+				E0351E20138FFB2D003AACFE /* MainWindow_iPhone.xib */,
+				E0351E21138FFB2D003AACFE /* MainWindow_iPhone_Universal.xib */,
+				E0351E22138FFB2D003AACFE /* TemplateIcon.icns */,
+				E0351E23138FFB2D003AACFE /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Window-based Application.xctemplate";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E0351DCC138FFAB0003AACFE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E0351DCF138FFAB0003AACFE /* Build configuration list for PBXProject "XcodeTemplates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0351DCA138FFAB0003AACFE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0351DD3138FFAF4003AACFE /* Install Project Templates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E0C230E213915F2600622500 /* Copy Couchbase.buncle to Base Template */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Couchbase.buncle to Base Template";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rsync -a \"${PROJECT_DIR}/../MobileCouchbase/Products/Couchbase.bundle\" \"${USER_LIBRARY_DIR}/Developer/Xcode/Templates/Couchbase/Couchbase Base.xctemplate/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E0351DD1138FFAB0003AACFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E0351DD2138FFAB0003AACFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		E0351DD5138FFAF4003AACFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0351DD6138FFAF4003AACFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0351DCF138FFAB0003AACFE /* Build configuration list for PBXProject "XcodeTemplates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0351DD1138FFAB0003AACFE /* Debug */,
+				E0351DD2138FFAB0003AACFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0351DD4138FFAF4003AACFE /* Build configuration list for PBXAggregateTarget "Install Project Templates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0351DD5138FFAF4003AACFE /* Debug */,
+				E0351DD6138FFAF4003AACFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E0351DDC138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0351DDD138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */,
+			);
+			currentVersion = E0351DDD138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */;
+			path = "___PACKAGENAMEASIDENTIFIER___.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E0351DF0138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0351DF1138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */,
+			);
+			currentVersion = E0351DF1138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */;
+			path = "___PACKAGENAMEASIDENTIFIER___.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E0351DCC138FFAB0003AACFE /* Project object */;
+}
