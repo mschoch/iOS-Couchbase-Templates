@@ -8,6 +8,7 @@ echo "Building..."
 cd "${TARGET_TEMP_DIR}"
 echo "Downloading file to ${TARGET_TEMP_DIR}"
 `curl -O "http://hexeditreality.com/sites/default/files/iOSCouchbase.zip"`
+mkdir -p "${PROJECT_DIR}/Products/"
 cd "${PROJECT_DIR}/Products"
 echo "Extracting files to ${PROJECT_DIR}/Products"
 unzip  "${TARGET_TEMP_DIR}/iOSCouchbase.zip"
