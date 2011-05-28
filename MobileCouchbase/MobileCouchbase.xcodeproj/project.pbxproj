@@ -1,0 +1,171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E0C2309A139156D800622500 /* download_couchbase.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download_couchbase.sh; sourceTree = "<group>"; };
+		E0C230A0139158FD00622500 /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Couchbase.bundle; sourceTree = "<group>"; };
+		E0C230A1139158FD00622500 /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
+		E0C230A2139158FD00622500 /* libCouchbase-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCouchbase-iphoneos.a"; sourceTree = "<group>"; };
+		E0C230A3139158FD00622500 /* libCouchbase-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCouchbase-iphonesimulator.a"; sourceTree = "<group>"; };
+		E0C230A4139158FD00622500 /* libTouchJSON-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTouchJSON-iphoneos.a"; sourceTree = "<group>"; };
+		E0C230A5139158FD00622500 /* libTouchJSON-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTouchJSON-iphonesimulator.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E0C23077139155CF00622500 = {
+			isa = PBXGroup;
+			children = (
+				E0C2309F139158FD00622500 /* Products */,
+				E0C23099139156D800622500 /* Scripts */,
+			);
+			sourceTree = "<group>";
+		};
+		E0C23099139156D800622500 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E0C2309A139156D800622500 /* download_couchbase.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		E0C2309F139158FD00622500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0C230A0139158FD00622500 /* Couchbase.bundle */,
+				E0C230A1139158FD00622500 /* Couchbase.h */,
+				E0C230A2139158FD00622500 /* libCouchbase-iphoneos.a */,
+				E0C230A3139158FD00622500 /* libCouchbase-iphonesimulator.a */,
+				E0C230A4139158FD00622500 /* libTouchJSON-iphoneos.a */,
+				E0C230A5139158FD00622500 /* libTouchJSON-iphonesimulator.a */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		E0C2309B1391571600622500 /* Download Couchbase */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"${PROJECT_DIR}/Scripts/download_couchbase.sh\"";
+			buildConfigurationList = E0C2309C1391571600622500 /* Build configuration list for PBXLegacyTarget "Download Couchbase" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "Download Couchbase";
+			passBuildSettingsInEnvironment = 1;
+			productName = "Download Couchbase";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		E0C23079139155CF00622500 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E0C2307C139155CF00622500 /* Build configuration list for PBXProject "MobileCouchbase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0C23077139155CF00622500;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0C2309B1391571600622500 /* Download Couchbase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E0C2307E139155CF00622500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E0C2307F139155CF00622500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		E0C2309D1391571600622500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E0C2309E1391571600622500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0C2307C139155CF00622500 /* Build configuration list for PBXProject "MobileCouchbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C2307E139155CF00622500 /* Debug */,
+				E0C2307F139155CF00622500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0C2309C1391571600622500 /* Build configuration list for PBXLegacyTarget "Download Couchbase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C2309D1391571600622500 /* Debug */,
+				E0C2309E1391571600622500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0C23079139155CF00622500 /* Project object */;
+}
