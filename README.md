@@ -57,6 +57,7 @@ iOS Couchbase User is the place to start for anyone interested in embedding Apac
 To see whats possible and get ideas for how to further integrate your application with CouchDB we suggest you look at the following applications:
 
 Mobile Couchbase Demo.app - https://github.com/couchbaselabs/iOS-Couchbase/tree/master/Demo
+
 OnTheSpot - https://github.com/couchbaselabs/OnTheSpot
 
 Also, if you'd like to use an Objective-C library to access CouchDB, consider Trundle - https://github.com/schwa/trundle
