@@ -24,7 +24,7 @@ iOS Couchbase User is the place to start for anyone interested in embedding Apac
 
 ##### Starting a New Project using a Couchbase Template
 
-* Select File > New > New Project... `&#8679; &#8984; N`
+* Select File > New > New Project... `⇧ ⌘N`
 
 <img src="https://github.com/mschoch/iOS-Couchbase-User/raw/master/doc/resources/003.png" width="400"/>
 
