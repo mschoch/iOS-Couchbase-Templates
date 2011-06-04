@@ -7,20 +7,35 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		E039FEE1139A97D10040C70C /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Couchbase.bundle; sourceTree = "<group>"; };
+		E039FEE3139A97D10040C70C /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
+		E039FEE4139A97D10040C70C /* libCouchbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCouchbase.a; sourceTree = "<group>"; };
 		E0C2309A139156D800622500 /* download_couchbase.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download_couchbase.sh; sourceTree = "<group>"; };
-		E0C230A0139158FD00622500 /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Couchbase.bundle; sourceTree = "<group>"; };
-		E0C230A1139158FD00622500 /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
-		E0C230A2139158FD00622500 /* libCouchbase-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCouchbase-iphoneos.a"; sourceTree = "<group>"; };
-		E0C230A3139158FD00622500 /* libCouchbase-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCouchbase-iphonesimulator.a"; sourceTree = "<group>"; };
-		E0C230A4139158FD00622500 /* libTouchJSON-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTouchJSON-iphoneos.a"; sourceTree = "<group>"; };
-		E0C230A5139158FD00622500 /* libTouchJSON-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libTouchJSON-iphonesimulator.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		E039FEDF139A97D10040C70C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E039FEE1139A97D10040C70C /* Couchbase.bundle */,
+				E039FEE2139A97D10040C70C /* include */,
+				E039FEE4139A97D10040C70C /* libCouchbase.a */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		E039FEE2139A97D10040C70C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E039FEE3139A97D10040C70C /* Couchbase.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		E0C23077139155CF00622500 = {
 			isa = PBXGroup;
 			children = (
-				E0C2309F139158FD00622500 /* Products */,
+				E039FEDF139A97D10040C70C /* Products */,
 				E0C23099139156D800622500 /* Scripts */,
 			);
 			sourceTree = "<group>";
@@ -31,19 +46,6 @@
 				E0C2309A139156D800622500 /* download_couchbase.sh */,
 			);
 			path = Scripts;
-			sourceTree = "<group>";
-		};
-		E0C2309F139158FD00622500 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E0C230A0139158FD00622500 /* Couchbase.bundle */,
-				E0C230A1139158FD00622500 /* Couchbase.h */,
-				E0C230A2139158FD00622500 /* libCouchbase-iphoneos.a */,
-				E0C230A3139158FD00622500 /* libCouchbase-iphonesimulator.a */,
-				E0C230A4139158FD00622500 /* libTouchJSON-iphoneos.a */,
-				E0C230A5139158FD00622500 /* libTouchJSON-iphonesimulator.a */,
-			);
-			path = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +103,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -128,7 +130,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -164,6 +166,7 @@
 				E0C2309E1391571600622500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

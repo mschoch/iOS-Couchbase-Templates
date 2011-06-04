@@ -94,12 +94,8 @@
 		E0220A1E1390029500FB8402 /* TemplateIcon.icns in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E17138FFB2D003AACFE /* TemplateIcon.icns */; };
 		E0220A1F1390029500FB8402 /* TemplateInfo.plist in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E18138FFB2D003AACFE /* TemplateInfo.plist */; };
 		E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */; };
-		E0351E26138FFB91003AACFE /* futon.bundle in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0351DD9138FFB2D003AACFE /* futon.bundle */; };
-		E0C230C613915D1F00622500 /* Couchbase.h in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C013915D1200622500 /* Couchbase.h */; };
-		E0C230C713915D1F00622500 /* libCouchbase-iphoneos.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C113915D1200622500 /* libCouchbase-iphoneos.a */; };
-		E0C230C813915D1F00622500 /* libCouchbase-iphonesimulator.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C213915D1200622500 /* libCouchbase-iphonesimulator.a */; };
-		E0C230C913915D1F00622500 /* libTouchJSON-iphoneos.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C313915D1200622500 /* libTouchJSON-iphoneos.a */; };
-		E0C230CA13915D1F00622500 /* libTouchJSON-iphonesimulator.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0C230C413915D1200622500 /* libTouchJSON-iphonesimulator.a */; };
+		E039FEEA139A994D0040C70C /* Couchbase.h in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E039FEE8139A98250040C70C /* Couchbase.h */; };
+		E039FEEB139A99510040C70C /* libCouchbase.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E039FEE7139A98250040C70C /* libCouchbase.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -244,12 +240,8 @@
 			dstSubfolderSpec = 0;
 			files = (
 				E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */,
-				E0C230C613915D1F00622500 /* Couchbase.h in Copy Base Template */,
-				E0C230C713915D1F00622500 /* libCouchbase-iphoneos.a in Copy Base Template */,
-				E0C230C813915D1F00622500 /* libCouchbase-iphonesimulator.a in Copy Base Template */,
-				E0C230C913915D1F00622500 /* libTouchJSON-iphoneos.a in Copy Base Template */,
-				E0C230CA13915D1F00622500 /* libTouchJSON-iphonesimulator.a in Copy Base Template */,
-				E0351E26138FFB91003AACFE /* futon.bundle in Copy Base Template */,
+				E039FEEA139A994D0040C70C /* Couchbase.h in Copy Base Template */,
+				E039FEEB139A99510040C70C /* libCouchbase.a in Copy Base Template */,
 			);
 			name = "Copy Base Template";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +249,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E0351DD9138FFB2D003AACFE /* futon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = futon.bundle; sourceTree = "<group>"; };
 		E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		E0351DDD138FFB2D003AACFE /* ___PACKAGENAMEASIDENTIFIER___.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "___PACKAGENAMEASIDENTIFIER___.xcdatamodel"; sourceTree = "<group>"; };
 		E0351DDE138FFB2D003AACFE /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -323,24 +314,18 @@
 		E0351E21138FFB2D003AACFE /* MainWindow_iPhone_Universal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPhone_Universal.xib; sourceTree = "<group>"; };
 		E0351E22138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
 		E0351E23138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E0C230BF13915D1200622500 /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Couchbase.bundle; path = ../MobileCouchbase/Products/Couchbase.bundle; sourceTree = "<group>"; };
-		E0C230C013915D1200622500 /* Couchbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Couchbase.h; path = ../MobileCouchbase/Products/Couchbase.h; sourceTree = "<group>"; };
-		E0C230C113915D1200622500 /* libCouchbase-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCouchbase-iphoneos.a"; path = "../MobileCouchbase/Products/libCouchbase-iphoneos.a"; sourceTree = "<group>"; };
-		E0C230C213915D1200622500 /* libCouchbase-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCouchbase-iphonesimulator.a"; path = "../MobileCouchbase/Products/libCouchbase-iphonesimulator.a"; sourceTree = "<group>"; };
-		E0C230C313915D1200622500 /* libTouchJSON-iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTouchJSON-iphoneos.a"; path = "../MobileCouchbase/Products/libTouchJSON-iphoneos.a"; sourceTree = "<group>"; };
-		E0C230C413915D1200622500 /* libTouchJSON-iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libTouchJSON-iphonesimulator.a"; path = "../MobileCouchbase/Products/libTouchJSON-iphonesimulator.a"; sourceTree = "<group>"; };
+		E039FEE5139A98250040C70C /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Couchbase.bundle; path = ../MobileCouchbase/Products/Couchbase.bundle; sourceTree = "<group>"; };
+		E039FEE7139A98250040C70C /* libCouchbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCouchbase.a; path = ../MobileCouchbase/Products/libCouchbase.a; sourceTree = "<group>"; };
+		E039FEE8139A98250040C70C /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E02209C3138FFC6300FB8402 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				E0C230BF13915D1200622500 /* Couchbase.bundle */,
-				E0C230C013915D1200622500 /* Couchbase.h */,
-				E0C230C113915D1200622500 /* libCouchbase-iphoneos.a */,
-				E0C230C213915D1200622500 /* libCouchbase-iphonesimulator.a */,
-				E0C230C313915D1200622500 /* libTouchJSON-iphoneos.a */,
-				E0C230C413915D1200622500 /* libTouchJSON-iphonesimulator.a */,
+				E039FEE5139A98250040C70C /* Couchbase.bundle */,
+				E039FEE6139A98250040C70C /* include */,
+				E039FEE7139A98250040C70C /* libCouchbase.a */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -371,7 +356,6 @@
 		E0351DD8138FFB2D003AACFE /* Couchbase Base.xctemplate */ = {
 			isa = PBXGroup;
 			children = (
-				E0351DD9138FFB2D003AACFE /* futon.bundle */,
 				E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */,
 			);
 			path = "Couchbase Base.xctemplate";
@@ -488,6 +472,15 @@
 				E0351E23138FFB2D003AACFE /* TemplateInfo.plist */,
 			);
 			path = "Couchbase Window-based Application.xctemplate";
+			sourceTree = "<group>";
+		};
+		E039FEE6139A98250040C70C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E039FEE8139A98250040C70C /* Couchbase.h */,
+			);
+			name = include;
+			path = ../MobileCouchbase/Products/include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

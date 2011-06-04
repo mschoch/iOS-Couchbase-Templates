@@ -20,11 +20,8 @@ echo "Done..."
 cleanAction () {
 echo "Cleaning..."
 rm -rvf "${PROJECT_DIR}/Products/Couchbase.bundle"
-rm -rvf "${PROJECT_DIR}/Products/Couchbase.h"
-rm -rvf "${PROJECT_DIR}/Products/libCouchbase-iphoneos.a"
-rm -rvf "${PROJECT_DIR}/Products/libCouchbase-iphonesimulator.a"
-rm -rvf "${PROJECT_DIR}/Products/libTouchJSON-iphoneos.a"
-rm -rvf "${PROJECT_DIR}/Products/libTouchJSON-iphonesimulator.a"
+rm -rvf "${PROJECT_DIR}/Products/include"
+rm -rvf "${PROJECT_DIR}/Products/libCouchbase.a"
 echo "Done..."
 }
 
