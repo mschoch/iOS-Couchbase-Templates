@@ -8,4 +8,5 @@ build
 MobileCouchbase/Products/*.bundle
 MobileCouchbase/Products/*.a
 MobileCouchbase/Products/*.h
+MobileCouchbase/Products/include/*
 
