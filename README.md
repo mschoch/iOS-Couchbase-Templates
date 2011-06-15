@@ -1,10 +1,10 @@
-### iOS Couchbase User
+### iOS Couchbase  Templates
 
-iOS Couchbase User is the place to start for anyone interested in embedding Apache CouchDB into their iOS application.
+iOS Couchbase Templates is the place to start for anyone interested in embedding Apache CouchDB into their iOS application.
 
 ### Getting Started
 
-##### Get a copy of iOS Couchbase User
+##### Get a copy of iOS Couchbase Templates 
 
      git clone git://github.com/couchbaselabs/iOS-Couchbase-Templates.git
 
