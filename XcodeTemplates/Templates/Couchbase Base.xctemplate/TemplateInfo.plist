@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.couchbase.utils</string>			
+	</array>
 	<key>Identifier</key>
 	<string>com.couchbase.base</string>
 	<key>Description</key>
@@ -50,7 +54,9 @@
 			<integer>1</integer>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:startCouchbase</key>
-		<string>[Couchbase startCouchbase:self]; // pass optional URL or port
+		<string>
+//Start Couchbase
+[Couchbase startCouchbase:self]; // pass optional URL or port
 </string>		
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</key>
 		<string>-(void)couchbaseDidStart:(NSURL *)serverURL {

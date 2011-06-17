@@ -13,6 +13,15 @@
 			buildPhases = (
 				E0351E24138FFB64003AACFE /* Copy Base Template */,
 				E0C230E213915F2600622500 /* Copy Couchbase.buncle to Base Template */,
+				E07522DC13ABA43D00582A6A /* Copy Utils Template */,
+				E075214A13AB9B3100582A6A /* Copy Utils Template - bundle */,
+				E075220513AB9CD600582A6A /* Copy Utils Template - bundle - dialog */,
+				E075221413AB9D0500582A6A /* Copy Utils Template - bundle - image */,
+				E075223513AB9D2800582A6A /* Copy Utils Template - bundle - script */,
+				E075225413AB9F0900582A6A /* Copy Utils Template - bundle - script - jspec */,
+				E075225913AB9F4E00582A6A /* Copy Utils Template - bundle - script - test */,
+				E075224613AB9D4800582A6A /* Copy Utils Template - bundle - spec */,
+				E075225113AB9D7500582A6A /* Copy Utils Template - bundle - style */,
 				E02209D01390008700FB8402 /* Copy Navigation-based Application Template */,
 				E02209D6139000DC00FB8402 /* Copy OpenGL ES Application Template */,
 				E02209E31390014F00FB8402 /* Copy Split View-based Application Template */,
@@ -96,6 +105,169 @@
 		E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */; };
 		E039FEEA139A994D0040C70C /* Couchbase.h in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E039FEE8139A98250040C70C /* Couchbase.h */; };
 		E039FEEB139A99510040C70C /* libCouchbase.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E039FEE7139A98250040C70C /* libCouchbase.a */; };
+		E07521FA13AB9CCF00582A6A /* _sidebar.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075214E13AB9BCC00582A6A /* _sidebar.html */; };
+		E07521FB13AB9CCF00582A6A /* config.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075214F13AB9BCC00582A6A /* config.html */; };
+		E07521FC13AB9CCF00582A6A /* couch_tests.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075215013AB9BCC00582A6A /* couch_tests.html */; };
+		E07521FD13AB9CCF00582A6A /* custom_test.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075215113AB9BCC00582A6A /* custom_test.html */; };
+		E07521FE13AB9CCF00582A6A /* database.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075215213AB9BCC00582A6A /* database.html */; };
+		E07521FF13AB9CCF00582A6A /* document.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075216213AB9BCC00582A6A /* document.html */; };
+		E075220013AB9CCF00582A6A /* favicon.ico in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075216313AB9BCC00582A6A /* favicon.ico */; };
+		E075220113AB9CCF00582A6A /* index.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075218513AB9BCC00582A6A /* index.html */; };
+		E075220213AB9CCF00582A6A /* replicator.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E075218613AB9BCC00582A6A /* replicator.html */; };
+		E075220313AB9CCF00582A6A /* session.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E07521E713AB9BCC00582A6A /* session.html */; };
+		E075220413AB9CCF00582A6A /* status.html in Copy Utils Template - bundle */ = {isa = PBXBuildFile; fileRef = E07521F313AB9BCC00582A6A /* status.html */; };
+		E075220613AB9CFD00582A6A /* _admin_party.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215413AB9BCC00582A6A /* _admin_party.html */; };
+		E075220713AB9CFD00582A6A /* _change_password.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215513AB9BCC00582A6A /* _change_password.html */; };
+		E075220813AB9CFD00582A6A /* _compact_cleanup.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215613AB9BCC00582A6A /* _compact_cleanup.html */; };
+		E075220913AB9CFD00582A6A /* _create_admin.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215713AB9BCC00582A6A /* _create_admin.html */; };
+		E075220A13AB9CFD00582A6A /* _create_config.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215813AB9BCC00582A6A /* _create_config.html */; };
+		E075220B13AB9CFD00582A6A /* _create_database.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215913AB9BCC00582A6A /* _create_database.html */; };
+		E075220C13AB9CFD00582A6A /* _database_security.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215A13AB9BCC00582A6A /* _database_security.html */; };
+		E075220D13AB9CFD00582A6A /* _delete_database.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215B13AB9BCC00582A6A /* _delete_database.html */; };
+		E075220E13AB9CFD00582A6A /* _delete_document.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215C13AB9BCC00582A6A /* _delete_document.html */; };
+		E075220F13AB9CFD00582A6A /* _login.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215D13AB9BCC00582A6A /* _login.html */; };
+		E075221013AB9CFD00582A6A /* _save_view_as.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215E13AB9BCC00582A6A /* _save_view_as.html */; };
+		E075221113AB9CFD00582A6A /* _share_test_reports.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075215F13AB9BCC00582A6A /* _share_test_reports.html */; };
+		E075221213AB9CFD00582A6A /* _signup.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075216013AB9BCC00582A6A /* _signup.html */; };
+		E075221313AB9CFD00582A6A /* _upload_attachment.html in Copy Utils Template - bundle - dialog */ = {isa = PBXBuildFile; fileRef = E075216113AB9BCC00582A6A /* _upload_attachment.html */; };
+		E075221513AB9D2100582A6A /* add.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216513AB9BCC00582A6A /* add.png */; };
+		E075221613AB9D2100582A6A /* apply.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216613AB9BCC00582A6A /* apply.gif */; };
+		E075221713AB9D2100582A6A /* bg.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216713AB9BCC00582A6A /* bg.png */; };
+		E075221813AB9D2100582A6A /* cancel.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216813AB9BCC00582A6A /* cancel.gif */; };
+		E075221913AB9D2100582A6A /* compact.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216913AB9BCC00582A6A /* compact.png */; };
+		E075221A13AB9D2100582A6A /* delete-mini.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216A13AB9BCC00582A6A /* delete-mini.png */; };
+		E075221B13AB9D2100582A6A /* delete.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216B13AB9BCC00582A6A /* delete.png */; };
+		E075221C13AB9D2100582A6A /* grippie.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216C13AB9BCC00582A6A /* grippie.gif */; };
+		E075221D13AB9D2100582A6A /* hgrad.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216D13AB9BCC00582A6A /* hgrad.gif */; };
+		E075221E13AB9D2100582A6A /* key.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216E13AB9BCC00582A6A /* key.png */; };
+		E075221F13AB9D2100582A6A /* load.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075216F13AB9BCC00582A6A /* load.png */; };
+		E075222013AB9D2100582A6A /* logo.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217013AB9BCC00582A6A /* logo.png */; };
+		E075222113AB9D2100582A6A /* order-asc.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217113AB9BCC00582A6A /* order-asc.gif */; };
+		E075222213AB9D2100582A6A /* order-desc.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217213AB9BCC00582A6A /* order-desc.gif */; };
+		E075222313AB9D2100582A6A /* path.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217313AB9BCC00582A6A /* path.gif */; };
+		E075222413AB9D2100582A6A /* progress.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217413AB9BCC00582A6A /* progress.gif */; };
+		E075222513AB9D2100582A6A /* rarrow.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217513AB9BCC00582A6A /* rarrow.png */; };
+		E075222613AB9D2100582A6A /* run-mini.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217613AB9BCC00582A6A /* run-mini.png */; };
+		E075222713AB9D2100582A6A /* run.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217713AB9BCC00582A6A /* run.png */; };
+		E075222813AB9D2100582A6A /* running.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217813AB9BCC00582A6A /* running.png */; };
+		E075222913AB9D2100582A6A /* save.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217913AB9BCC00582A6A /* save.png */; };
+		E075222A13AB9D2100582A6A /* sidebar-toggle.png in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217A13AB9BCC00582A6A /* sidebar-toggle.png */; };
+		E075222B13AB9D2100582A6A /* spinner.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217B13AB9BCC00582A6A /* spinner.gif */; };
+		E075222C13AB9D2100582A6A /* spinner_33.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217C13AB9BCC00582A6A /* spinner_33.gif */; };
+		E075222D13AB9D2100582A6A /* spinner_6b.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217D13AB9BCC00582A6A /* spinner_6b.gif */; };
+		E075222E13AB9D2100582A6A /* test_failure.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217E13AB9BCC00582A6A /* test_failure.gif */; };
+		E075222F13AB9D2100582A6A /* test_success.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075217F13AB9BCC00582A6A /* test_success.gif */; };
+		E075223013AB9D2100582A6A /* thead-key.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075218013AB9BCC00582A6A /* thead-key.gif */; };
+		E075223113AB9D2100582A6A /* thead.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075218113AB9BCC00582A6A /* thead.gif */; };
+		E075223213AB9D2100582A6A /* toggle-collapse.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075218213AB9BCC00582A6A /* toggle-collapse.gif */; };
+		E075223313AB9D2100582A6A /* toggle-expand.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075218313AB9BCC00582A6A /* toggle-expand.gif */; };
+		E075223413AB9D2100582A6A /* twisty.gif in Copy Utils Template - bundle - image */ = {isa = PBXBuildFile; fileRef = E075218413AB9BCC00582A6A /* twisty.gif */; };
+		E075223613AB9D4300582A6A /* base64.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218813AB9BCC00582A6A /* base64.js */; };
+		E075223713AB9D4300582A6A /* couch.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218913AB9BCC00582A6A /* couch.js */; };
+		E075223813AB9D4300582A6A /* couch_test_runner.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218A13AB9BCC00582A6A /* couch_test_runner.js */; };
+		E075223913AB9D4300582A6A /* couch_tests.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218B13AB9BCC00582A6A /* couch_tests.js */; };
+		E075223A13AB9D4300582A6A /* futon.browse.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218C13AB9BCC00582A6A /* futon.browse.js */; };
+		E075223B13AB9D4300582A6A /* futon.format.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218D13AB9BCC00582A6A /* futon.format.js */; };
+		E075223C13AB9D4300582A6A /* futon.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218E13AB9BCC00582A6A /* futon.js */; };
+		E075223D13AB9D4300582A6A /* jquery-ui-1.8.11.custom.min.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075218F13AB9BCC00582A6A /* jquery-ui-1.8.11.custom.min.js */; };
+		E075223E13AB9D4300582A6A /* jquery.couch.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219013AB9BCC00582A6A /* jquery.couch.js */; };
+		E075223F13AB9D4300582A6A /* jquery.dialog.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219113AB9BCC00582A6A /* jquery.dialog.js */; };
+		E075224013AB9D4300582A6A /* jquery.editinline.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219213AB9BCC00582A6A /* jquery.editinline.js */; };
+		E075224113AB9D4300582A6A /* jquery.form.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219313AB9BCC00582A6A /* jquery.form.js */; };
+		E075224213AB9D4300582A6A /* jquery.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219413AB9BCC00582A6A /* jquery.js */; };
+		E075224313AB9D4300582A6A /* jquery.resizer.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219513AB9BCC00582A6A /* jquery.resizer.js */; };
+		E075224413AB9D4300582A6A /* jquery.suggest.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219613AB9BCC00582A6A /* jquery.suggest.js */; };
+		E075224513AB9D4300582A6A /* json2.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219713AB9BCC00582A6A /* json2.js */; };
+		E075224713AB9D6F00582A6A /* couch_js_class_methods_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521E913AB9BCC00582A6A /* couch_js_class_methods_spec.js */; };
+		E075224813AB9D6F00582A6A /* couch_js_instance_methods_1_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521EA13AB9BCC00582A6A /* couch_js_instance_methods_1_spec.js */; };
+		E075224913AB9D6F00582A6A /* couch_js_instance_methods_2_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521EB13AB9BCC00582A6A /* couch_js_instance_methods_2_spec.js */; };
+		E075224A13AB9D6F00582A6A /* couch_js_instance_methods_3_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521EC13AB9BCC00582A6A /* couch_js_instance_methods_3_spec.js */; };
+		E075224B13AB9D6F00582A6A /* custom_helpers.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521ED13AB9BCC00582A6A /* custom_helpers.js */; };
+		E075224C13AB9D6F00582A6A /* jquery_couch_js_class_methods_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521EE13AB9BCC00582A6A /* jquery_couch_js_class_methods_spec.js */; };
+		E075224D13AB9D6F00582A6A /* jquery_couch_js_instance_methods_1_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521EF13AB9BCC00582A6A /* jquery_couch_js_instance_methods_1_spec.js */; };
+		E075224E13AB9D6F00582A6A /* jquery_couch_js_instance_methods_2_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521F013AB9BCC00582A6A /* jquery_couch_js_instance_methods_2_spec.js */; };
+		E075224F13AB9D6F00582A6A /* jquery_couch_js_instance_methods_3_spec.js in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521F113AB9BCC00582A6A /* jquery_couch_js_instance_methods_3_spec.js */; };
+		E075225013AB9D6F00582A6A /* run.html in Copy Utils Template - bundle - spec */ = {isa = PBXBuildFile; fileRef = E07521F213AB9BCC00582A6A /* run.html */; };
+		E075225213AB9D9000582A6A /* jquery-ui-1.8.11.custom.css in Copy Utils Template - bundle - style */ = {isa = PBXBuildFile; fileRef = E07521F513AB9BCC00582A6A /* jquery-ui-1.8.11.custom.css */; };
+		E075225313AB9D9000582A6A /* layout.css in Copy Utils Template - bundle - style */ = {isa = PBXBuildFile; fileRef = E07521F613AB9BCC00582A6A /* layout.css */; };
+		E075225513AB9F3900582A6A /* jspec.css in Copy Utils Template - bundle - script - jspec */ = {isa = PBXBuildFile; fileRef = E075219913AB9BCC00582A6A /* jspec.css */; };
+		E075225613AB9F3900582A6A /* jspec.jquery.js in Copy Utils Template - bundle - script - jspec */ = {isa = PBXBuildFile; fileRef = E075219A13AB9BCC00582A6A /* jspec.jquery.js */; };
+		E075225713AB9F3900582A6A /* jspec.js in Copy Utils Template - bundle - script - jspec */ = {isa = PBXBuildFile; fileRef = E075219B13AB9BCC00582A6A /* jspec.js */; };
+		E075225813AB9F3900582A6A /* jspec.xhr.js in Copy Utils Template - bundle - script - jspec */ = {isa = PBXBuildFile; fileRef = E075219C13AB9BCC00582A6A /* jspec.xhr.js */; };
+		E075225A13AB9F7300582A6A /* all_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A013AB9BCC00582A6A /* all_docs.js */; };
+		E075225B13AB9F7300582A6A /* attachment_conflicts.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A113AB9BCC00582A6A /* attachment_conflicts.js */; };
+		E075225C13AB9F7300582A6A /* attachment_names.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A213AB9BCC00582A6A /* attachment_names.js */; };
+		E075225D13AB9F7300582A6A /* attachment_paths.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A313AB9BCC00582A6A /* attachment_paths.js */; };
+		E075225E13AB9F7300582A6A /* attachment_ranges.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A413AB9BCC00582A6A /* attachment_ranges.js */; };
+		E075225F13AB9F7300582A6A /* attachment_views.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A513AB9BCC00582A6A /* attachment_views.js */; };
+		E075226013AB9F7300582A6A /* attachments.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A613AB9BCC00582A6A /* attachments.js */; };
+		E075226113AB9F7300582A6A /* attachments_multipart.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A713AB9BCC00582A6A /* attachments_multipart.js */; };
+		E075226213AB9F7300582A6A /* auth_cache.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A813AB9BCC00582A6A /* auth_cache.js */; };
+		E075226313AB9F7300582A6A /* basics.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521A913AB9BCC00582A6A /* basics.js */; };
+		E075226413AB9F7300582A6A /* batch_save.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521AA13AB9BCC00582A6A /* batch_save.js */; };
+		E075226513AB9F7400582A6A /* bulk_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521AB13AB9BCC00582A6A /* bulk_docs.js */; };
+		E075226613AB9F7400582A6A /* changes.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521AC13AB9BCC00582A6A /* changes.js */; };
+		E075226713AB9F7400582A6A /* compact.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521AD13AB9BCC00582A6A /* compact.js */; };
+		E075226813AB9F7400582A6A /* config.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521AE13AB9BCC00582A6A /* config.js */; };
+		E075226913AB9F7400582A6A /* conflicts.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521AF13AB9BCC00582A6A /* conflicts.js */; };
+		E075226A13AB9F7400582A6A /* content_negotiation.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B013AB9BCC00582A6A /* content_negotiation.js */; };
+		E075226B13AB9F7400582A6A /* cookie_auth.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B113AB9BCC00582A6A /* cookie_auth.js */; };
+		E075226C13AB9F7400582A6A /* copy_doc.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B213AB9BCC00582A6A /* copy_doc.js */; };
+		E075226D13AB9F7400582A6A /* delayed_commits.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B313AB9BCC00582A6A /* delayed_commits.js */; };
+		E075226E13AB9F7400582A6A /* design_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B413AB9BCC00582A6A /* design_docs.js */; };
+		E075226F13AB9F7400582A6A /* design_options.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B513AB9BCC00582A6A /* design_options.js */; };
+		E075227013AB9F7400582A6A /* design_paths.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B613AB9BCC00582A6A /* design_paths.js */; };
+		E075227113AB9F7400582A6A /* erlang_views.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B713AB9BCC00582A6A /* erlang_views.js */; };
+		E075227213AB9F7400582A6A /* etags_head.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B813AB9BCC00582A6A /* etags_head.js */; };
+		E075227313AB9F7400582A6A /* etags_views.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521B913AB9BCC00582A6A /* etags_views.js */; };
+		E075227413AB9F7400582A6A /* form_submit.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521BA13AB9BCC00582A6A /* form_submit.js */; };
+		E075227513AB9F7400582A6A /* http.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521BB13AB9BCC00582A6A /* http.js */; };
+		E075227613AB9F7400582A6A /* invalid_docids.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521BC13AB9BCC00582A6A /* invalid_docids.js */; };
+		E075227713AB9F7400582A6A /* jsonp.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521BD13AB9BCC00582A6A /* jsonp.js */; };
+		E075227813AB9F7400582A6A /* large_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521BE13AB9BCC00582A6A /* large_docs.js */; };
+		E075227913AB9F7400582A6A /* list_views.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521BF13AB9BCC00582A6A /* list_views.js */; };
+		E075227A13AB9F7400582A6A /* lorem.txt in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C013AB9BCC00582A6A /* lorem.txt */; };
+		E075227B13AB9F7400582A6A /* lorem_b64.txt in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C113AB9BCC00582A6A /* lorem_b64.txt */; };
+		E075227C13AB9F7400582A6A /* lots_of_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C213AB9BCC00582A6A /* lots_of_docs.js */; };
+		E075227D13AB9F7400582A6A /* method_override.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C313AB9BCC00582A6A /* method_override.js */; };
+		E075227E13AB9F7400582A6A /* multiple_rows.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C413AB9BCC00582A6A /* multiple_rows.js */; };
+		E075227F13AB9F7400582A6A /* oauth.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C513AB9BCC00582A6A /* oauth.js */; };
+		E075228013AB9F7400582A6A /* proxyauth.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C613AB9BCC00582A6A /* proxyauth.js */; };
+		E075228113AB9F7400582A6A /* purge.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C713AB9BCC00582A6A /* purge.js */; };
+		E075228213AB9F7400582A6A /* reader_acl.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C813AB9BCC00582A6A /* reader_acl.js */; };
+		E075228313AB9F7400582A6A /* recreate_doc.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521C913AB9BCC00582A6A /* recreate_doc.js */; };
+		E075228413AB9F7400582A6A /* reduce.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521CA13AB9BCC00582A6A /* reduce.js */; };
+		E075228513AB9F7400582A6A /* reduce_builtin.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521CB13AB9BCC00582A6A /* reduce_builtin.js */; };
+		E075228613AB9F7400582A6A /* reduce_false.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521CC13AB9BCC00582A6A /* reduce_false.js */; };
+		E075228713AB9F7400582A6A /* reduce_false_temp.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521CD13AB9BCC00582A6A /* reduce_false_temp.js */; };
+		E075228813AB9F7400582A6A /* replication.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521CE13AB9BCC00582A6A /* replication.js */; };
+		E075228913AB9F7400582A6A /* replicator_db.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521CF13AB9BCC00582A6A /* replicator_db.js */; };
+		E075228A13AB9F7400582A6A /* rev_stemming.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D013AB9BCC00582A6A /* rev_stemming.js */; };
+		E075228B13AB9F7400582A6A /* rewrite.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D113AB9BCC00582A6A /* rewrite.js */; };
+		E075228C13AB9F7400582A6A /* security_validation.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D213AB9BCC00582A6A /* security_validation.js */; };
+		E075228D13AB9F7400582A6A /* show_documents.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D313AB9BCC00582A6A /* show_documents.js */; };
+		E075228E13AB9F7400582A6A /* stats.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D413AB9BCC00582A6A /* stats.js */; };
+		E075228F13AB9F7400582A6A /* update_documents.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D513AB9BCC00582A6A /* update_documents.js */; };
+		E075229013AB9F7400582A6A /* users_db.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D613AB9BCC00582A6A /* users_db.js */; };
+		E075229113AB9F7400582A6A /* utf8.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D713AB9BCC00582A6A /* utf8.js */; };
+		E075229213AB9F7400582A6A /* uuids.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D813AB9BCC00582A6A /* uuids.js */; };
+		E075229313AB9F7400582A6A /* view_collation.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521D913AB9BCC00582A6A /* view_collation.js */; };
+		E075229413AB9F7400582A6A /* view_collation_raw.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521DA13AB9BCC00582A6A /* view_collation_raw.js */; };
+		E075229513AB9F7400582A6A /* view_compaction.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521DB13AB9BCC00582A6A /* view_compaction.js */; };
+		E075229613AB9F7400582A6A /* view_conflicts.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521DC13AB9BCC00582A6A /* view_conflicts.js */; };
+		E075229713AB9F7400582A6A /* view_errors.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521DD13AB9BCC00582A6A /* view_errors.js */; };
+		E075229813AB9F7400582A6A /* view_include_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521DE13AB9BCC00582A6A /* view_include_docs.js */; };
+		E075229913AB9F7400582A6A /* view_multi_key_all_docs.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521DF13AB9BCC00582A6A /* view_multi_key_all_docs.js */; };
+		E075229A13AB9F7400582A6A /* view_multi_key_design.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E013AB9BCC00582A6A /* view_multi_key_design.js */; };
+		E075229B13AB9F7400582A6A /* view_multi_key_temp.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E113AB9BCC00582A6A /* view_multi_key_temp.js */; };
+		E075229C13AB9F7400582A6A /* view_offsets.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E213AB9BCC00582A6A /* view_offsets.js */; };
+		E075229D13AB9F7400582A6A /* view_pagination.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E313AB9BCC00582A6A /* view_pagination.js */; };
+		E075229E13AB9F7400582A6A /* view_sandboxing.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E413AB9BCC00582A6A /* view_sandboxing.js */; };
+		E075229F13AB9F7400582A6A /* view_update_seq.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E513AB9BCC00582A6A /* view_update_seq.js */; };
+		E07522A013AB9F7400582A6A /* view_xml.js in Copy Utils Template - bundle - script - test */ = {isa = PBXBuildFile; fileRef = E07521E613AB9BCC00582A6A /* view_xml.js */; };
+		E07522A113AB9FB000582A6A /* oauth.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219D13AB9BCC00582A6A /* oauth.js */; };
+		E07522A213AB9FB000582A6A /* sha1.js in Copy Utils Template - bundle - script */ = {isa = PBXBuildFile; fileRef = E075219E13AB9BCC00582A6A /* sha1.js */; };
+		E07522DD13ABA46D00582A6A /* TemplateInfo.plist in Copy Utils Template */ = {isa = PBXBuildFile; fileRef = E07521F813AB9C5200582A6A /* TemplateInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -246,6 +418,259 @@
 			name = "Copy Base Template";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E075214A13AB9B3100582A6A /* Copy Utils Template - bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle";
+			dstSubfolderSpec = 0;
+			files = (
+				E07521FA13AB9CCF00582A6A /* _sidebar.html in Copy Utils Template - bundle */,
+				E07521FB13AB9CCF00582A6A /* config.html in Copy Utils Template - bundle */,
+				E07521FC13AB9CCF00582A6A /* couch_tests.html in Copy Utils Template - bundle */,
+				E07521FD13AB9CCF00582A6A /* custom_test.html in Copy Utils Template - bundle */,
+				E07521FE13AB9CCF00582A6A /* database.html in Copy Utils Template - bundle */,
+				E07521FF13AB9CCF00582A6A /* document.html in Copy Utils Template - bundle */,
+				E075220013AB9CCF00582A6A /* favicon.ico in Copy Utils Template - bundle */,
+				E075220113AB9CCF00582A6A /* index.html in Copy Utils Template - bundle */,
+				E075220213AB9CCF00582A6A /* replicator.html in Copy Utils Template - bundle */,
+				E075220313AB9CCF00582A6A /* session.html in Copy Utils Template - bundle */,
+				E075220413AB9CCF00582A6A /* status.html in Copy Utils Template - bundle */,
+			);
+			name = "Copy Utils Template - bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075220513AB9CD600582A6A /* Copy Utils Template - bundle - dialog */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/dialog";
+			dstSubfolderSpec = 0;
+			files = (
+				E075220613AB9CFD00582A6A /* _admin_party.html in Copy Utils Template - bundle - dialog */,
+				E075220713AB9CFD00582A6A /* _change_password.html in Copy Utils Template - bundle - dialog */,
+				E075220813AB9CFD00582A6A /* _compact_cleanup.html in Copy Utils Template - bundle - dialog */,
+				E075220913AB9CFD00582A6A /* _create_admin.html in Copy Utils Template - bundle - dialog */,
+				E075220A13AB9CFD00582A6A /* _create_config.html in Copy Utils Template - bundle - dialog */,
+				E075220B13AB9CFD00582A6A /* _create_database.html in Copy Utils Template - bundle - dialog */,
+				E075220C13AB9CFD00582A6A /* _database_security.html in Copy Utils Template - bundle - dialog */,
+				E075220D13AB9CFD00582A6A /* _delete_database.html in Copy Utils Template - bundle - dialog */,
+				E075220E13AB9CFD00582A6A /* _delete_document.html in Copy Utils Template - bundle - dialog */,
+				E075220F13AB9CFD00582A6A /* _login.html in Copy Utils Template - bundle - dialog */,
+				E075221013AB9CFD00582A6A /* _save_view_as.html in Copy Utils Template - bundle - dialog */,
+				E075221113AB9CFD00582A6A /* _share_test_reports.html in Copy Utils Template - bundle - dialog */,
+				E075221213AB9CFD00582A6A /* _signup.html in Copy Utils Template - bundle - dialog */,
+				E075221313AB9CFD00582A6A /* _upload_attachment.html in Copy Utils Template - bundle - dialog */,
+			);
+			name = "Copy Utils Template - bundle - dialog";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075221413AB9D0500582A6A /* Copy Utils Template - bundle - image */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/image";
+			dstSubfolderSpec = 0;
+			files = (
+				E075221513AB9D2100582A6A /* add.png in Copy Utils Template - bundle - image */,
+				E075221613AB9D2100582A6A /* apply.gif in Copy Utils Template - bundle - image */,
+				E075221713AB9D2100582A6A /* bg.png in Copy Utils Template - bundle - image */,
+				E075221813AB9D2100582A6A /* cancel.gif in Copy Utils Template - bundle - image */,
+				E075221913AB9D2100582A6A /* compact.png in Copy Utils Template - bundle - image */,
+				E075221A13AB9D2100582A6A /* delete-mini.png in Copy Utils Template - bundle - image */,
+				E075221B13AB9D2100582A6A /* delete.png in Copy Utils Template - bundle - image */,
+				E075221C13AB9D2100582A6A /* grippie.gif in Copy Utils Template - bundle - image */,
+				E075221D13AB9D2100582A6A /* hgrad.gif in Copy Utils Template - bundle - image */,
+				E075221E13AB9D2100582A6A /* key.png in Copy Utils Template - bundle - image */,
+				E075221F13AB9D2100582A6A /* load.png in Copy Utils Template - bundle - image */,
+				E075222013AB9D2100582A6A /* logo.png in Copy Utils Template - bundle - image */,
+				E075222113AB9D2100582A6A /* order-asc.gif in Copy Utils Template - bundle - image */,
+				E075222213AB9D2100582A6A /* order-desc.gif in Copy Utils Template - bundle - image */,
+				E075222313AB9D2100582A6A /* path.gif in Copy Utils Template - bundle - image */,
+				E075222413AB9D2100582A6A /* progress.gif in Copy Utils Template - bundle - image */,
+				E075222513AB9D2100582A6A /* rarrow.png in Copy Utils Template - bundle - image */,
+				E075222613AB9D2100582A6A /* run-mini.png in Copy Utils Template - bundle - image */,
+				E075222713AB9D2100582A6A /* run.png in Copy Utils Template - bundle - image */,
+				E075222813AB9D2100582A6A /* running.png in Copy Utils Template - bundle - image */,
+				E075222913AB9D2100582A6A /* save.png in Copy Utils Template - bundle - image */,
+				E075222A13AB9D2100582A6A /* sidebar-toggle.png in Copy Utils Template - bundle - image */,
+				E075222B13AB9D2100582A6A /* spinner.gif in Copy Utils Template - bundle - image */,
+				E075222C13AB9D2100582A6A /* spinner_33.gif in Copy Utils Template - bundle - image */,
+				E075222D13AB9D2100582A6A /* spinner_6b.gif in Copy Utils Template - bundle - image */,
+				E075222E13AB9D2100582A6A /* test_failure.gif in Copy Utils Template - bundle - image */,
+				E075222F13AB9D2100582A6A /* test_success.gif in Copy Utils Template - bundle - image */,
+				E075223013AB9D2100582A6A /* thead-key.gif in Copy Utils Template - bundle - image */,
+				E075223113AB9D2100582A6A /* thead.gif in Copy Utils Template - bundle - image */,
+				E075223213AB9D2100582A6A /* toggle-collapse.gif in Copy Utils Template - bundle - image */,
+				E075223313AB9D2100582A6A /* toggle-expand.gif in Copy Utils Template - bundle - image */,
+				E075223413AB9D2100582A6A /* twisty.gif in Copy Utils Template - bundle - image */,
+			);
+			name = "Copy Utils Template - bundle - image";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075223513AB9D2800582A6A /* Copy Utils Template - bundle - script */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/script";
+			dstSubfolderSpec = 0;
+			files = (
+				E07522A113AB9FB000582A6A /* oauth.js in Copy Utils Template - bundle - script */,
+				E07522A213AB9FB000582A6A /* sha1.js in Copy Utils Template - bundle - script */,
+				E075223613AB9D4300582A6A /* base64.js in Copy Utils Template - bundle - script */,
+				E075223713AB9D4300582A6A /* couch.js in Copy Utils Template - bundle - script */,
+				E075223813AB9D4300582A6A /* couch_test_runner.js in Copy Utils Template - bundle - script */,
+				E075223913AB9D4300582A6A /* couch_tests.js in Copy Utils Template - bundle - script */,
+				E075223A13AB9D4300582A6A /* futon.browse.js in Copy Utils Template - bundle - script */,
+				E075223B13AB9D4300582A6A /* futon.format.js in Copy Utils Template - bundle - script */,
+				E075223C13AB9D4300582A6A /* futon.js in Copy Utils Template - bundle - script */,
+				E075223D13AB9D4300582A6A /* jquery-ui-1.8.11.custom.min.js in Copy Utils Template - bundle - script */,
+				E075223E13AB9D4300582A6A /* jquery.couch.js in Copy Utils Template - bundle - script */,
+				E075223F13AB9D4300582A6A /* jquery.dialog.js in Copy Utils Template - bundle - script */,
+				E075224013AB9D4300582A6A /* jquery.editinline.js in Copy Utils Template - bundle - script */,
+				E075224113AB9D4300582A6A /* jquery.form.js in Copy Utils Template - bundle - script */,
+				E075224213AB9D4300582A6A /* jquery.js in Copy Utils Template - bundle - script */,
+				E075224313AB9D4300582A6A /* jquery.resizer.js in Copy Utils Template - bundle - script */,
+				E075224413AB9D4300582A6A /* jquery.suggest.js in Copy Utils Template - bundle - script */,
+				E075224513AB9D4300582A6A /* json2.js in Copy Utils Template - bundle - script */,
+			);
+			name = "Copy Utils Template - bundle - script";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075224613AB9D4800582A6A /* Copy Utils Template - bundle - spec */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/spec";
+			dstSubfolderSpec = 0;
+			files = (
+				E075224713AB9D6F00582A6A /* couch_js_class_methods_spec.js in Copy Utils Template - bundle - spec */,
+				E075224813AB9D6F00582A6A /* couch_js_instance_methods_1_spec.js in Copy Utils Template - bundle - spec */,
+				E075224913AB9D6F00582A6A /* couch_js_instance_methods_2_spec.js in Copy Utils Template - bundle - spec */,
+				E075224A13AB9D6F00582A6A /* couch_js_instance_methods_3_spec.js in Copy Utils Template - bundle - spec */,
+				E075224B13AB9D6F00582A6A /* custom_helpers.js in Copy Utils Template - bundle - spec */,
+				E075224C13AB9D6F00582A6A /* jquery_couch_js_class_methods_spec.js in Copy Utils Template - bundle - spec */,
+				E075224D13AB9D6F00582A6A /* jquery_couch_js_instance_methods_1_spec.js in Copy Utils Template - bundle - spec */,
+				E075224E13AB9D6F00582A6A /* jquery_couch_js_instance_methods_2_spec.js in Copy Utils Template - bundle - spec */,
+				E075224F13AB9D6F00582A6A /* jquery_couch_js_instance_methods_3_spec.js in Copy Utils Template - bundle - spec */,
+				E075225013AB9D6F00582A6A /* run.html in Copy Utils Template - bundle - spec */,
+			);
+			name = "Copy Utils Template - bundle - spec";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075225113AB9D7500582A6A /* Copy Utils Template - bundle - style */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/style";
+			dstSubfolderSpec = 0;
+			files = (
+				E075225213AB9D9000582A6A /* jquery-ui-1.8.11.custom.css in Copy Utils Template - bundle - style */,
+				E075225313AB9D9000582A6A /* layout.css in Copy Utils Template - bundle - style */,
+			);
+			name = "Copy Utils Template - bundle - style";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075225413AB9F0900582A6A /* Copy Utils Template - bundle - script - jspec */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/script/jspec";
+			dstSubfolderSpec = 0;
+			files = (
+				E075225513AB9F3900582A6A /* jspec.css in Copy Utils Template - bundle - script - jspec */,
+				E075225613AB9F3900582A6A /* jspec.jquery.js in Copy Utils Template - bundle - script - jspec */,
+				E075225713AB9F3900582A6A /* jspec.js in Copy Utils Template - bundle - script - jspec */,
+				E075225813AB9F3900582A6A /* jspec.xhr.js in Copy Utils Template - bundle - script - jspec */,
+			);
+			name = "Copy Utils Template - bundle - script - jspec";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E075225913AB9F4E00582A6A /* Copy Utils Template - bundle - script - test */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate/CouchDBUtils.bundle/script/test";
+			dstSubfolderSpec = 0;
+			files = (
+				E075225A13AB9F7300582A6A /* all_docs.js in Copy Utils Template - bundle - script - test */,
+				E075225B13AB9F7300582A6A /* attachment_conflicts.js in Copy Utils Template - bundle - script - test */,
+				E075225C13AB9F7300582A6A /* attachment_names.js in Copy Utils Template - bundle - script - test */,
+				E075225D13AB9F7300582A6A /* attachment_paths.js in Copy Utils Template - bundle - script - test */,
+				E075225E13AB9F7300582A6A /* attachment_ranges.js in Copy Utils Template - bundle - script - test */,
+				E075225F13AB9F7300582A6A /* attachment_views.js in Copy Utils Template - bundle - script - test */,
+				E075226013AB9F7300582A6A /* attachments.js in Copy Utils Template - bundle - script - test */,
+				E075226113AB9F7300582A6A /* attachments_multipart.js in Copy Utils Template - bundle - script - test */,
+				E075226213AB9F7300582A6A /* auth_cache.js in Copy Utils Template - bundle - script - test */,
+				E075226313AB9F7300582A6A /* basics.js in Copy Utils Template - bundle - script - test */,
+				E075226413AB9F7300582A6A /* batch_save.js in Copy Utils Template - bundle - script - test */,
+				E075226513AB9F7400582A6A /* bulk_docs.js in Copy Utils Template - bundle - script - test */,
+				E075226613AB9F7400582A6A /* changes.js in Copy Utils Template - bundle - script - test */,
+				E075226713AB9F7400582A6A /* compact.js in Copy Utils Template - bundle - script - test */,
+				E075226813AB9F7400582A6A /* config.js in Copy Utils Template - bundle - script - test */,
+				E075226913AB9F7400582A6A /* conflicts.js in Copy Utils Template - bundle - script - test */,
+				E075226A13AB9F7400582A6A /* content_negotiation.js in Copy Utils Template - bundle - script - test */,
+				E075226B13AB9F7400582A6A /* cookie_auth.js in Copy Utils Template - bundle - script - test */,
+				E075226C13AB9F7400582A6A /* copy_doc.js in Copy Utils Template - bundle - script - test */,
+				E075226D13AB9F7400582A6A /* delayed_commits.js in Copy Utils Template - bundle - script - test */,
+				E075226E13AB9F7400582A6A /* design_docs.js in Copy Utils Template - bundle - script - test */,
+				E075226F13AB9F7400582A6A /* design_options.js in Copy Utils Template - bundle - script - test */,
+				E075227013AB9F7400582A6A /* design_paths.js in Copy Utils Template - bundle - script - test */,
+				E075227113AB9F7400582A6A /* erlang_views.js in Copy Utils Template - bundle - script - test */,
+				E075227213AB9F7400582A6A /* etags_head.js in Copy Utils Template - bundle - script - test */,
+				E075227313AB9F7400582A6A /* etags_views.js in Copy Utils Template - bundle - script - test */,
+				E075227413AB9F7400582A6A /* form_submit.js in Copy Utils Template - bundle - script - test */,
+				E075227513AB9F7400582A6A /* http.js in Copy Utils Template - bundle - script - test */,
+				E075227613AB9F7400582A6A /* invalid_docids.js in Copy Utils Template - bundle - script - test */,
+				E075227713AB9F7400582A6A /* jsonp.js in Copy Utils Template - bundle - script - test */,
+				E075227813AB9F7400582A6A /* large_docs.js in Copy Utils Template - bundle - script - test */,
+				E075227913AB9F7400582A6A /* list_views.js in Copy Utils Template - bundle - script - test */,
+				E075227A13AB9F7400582A6A /* lorem.txt in Copy Utils Template - bundle - script - test */,
+				E075227B13AB9F7400582A6A /* lorem_b64.txt in Copy Utils Template - bundle - script - test */,
+				E075227C13AB9F7400582A6A /* lots_of_docs.js in Copy Utils Template - bundle - script - test */,
+				E075227D13AB9F7400582A6A /* method_override.js in Copy Utils Template - bundle - script - test */,
+				E075227E13AB9F7400582A6A /* multiple_rows.js in Copy Utils Template - bundle - script - test */,
+				E075227F13AB9F7400582A6A /* oauth.js in Copy Utils Template - bundle - script - test */,
+				E075228013AB9F7400582A6A /* proxyauth.js in Copy Utils Template - bundle - script - test */,
+				E075228113AB9F7400582A6A /* purge.js in Copy Utils Template - bundle - script - test */,
+				E075228213AB9F7400582A6A /* reader_acl.js in Copy Utils Template - bundle - script - test */,
+				E075228313AB9F7400582A6A /* recreate_doc.js in Copy Utils Template - bundle - script - test */,
+				E075228413AB9F7400582A6A /* reduce.js in Copy Utils Template - bundle - script - test */,
+				E075228513AB9F7400582A6A /* reduce_builtin.js in Copy Utils Template - bundle - script - test */,
+				E075228613AB9F7400582A6A /* reduce_false.js in Copy Utils Template - bundle - script - test */,
+				E075228713AB9F7400582A6A /* reduce_false_temp.js in Copy Utils Template - bundle - script - test */,
+				E075228813AB9F7400582A6A /* replication.js in Copy Utils Template - bundle - script - test */,
+				E075228913AB9F7400582A6A /* replicator_db.js in Copy Utils Template - bundle - script - test */,
+				E075228A13AB9F7400582A6A /* rev_stemming.js in Copy Utils Template - bundle - script - test */,
+				E075228B13AB9F7400582A6A /* rewrite.js in Copy Utils Template - bundle - script - test */,
+				E075228C13AB9F7400582A6A /* security_validation.js in Copy Utils Template - bundle - script - test */,
+				E075228D13AB9F7400582A6A /* show_documents.js in Copy Utils Template - bundle - script - test */,
+				E075228E13AB9F7400582A6A /* stats.js in Copy Utils Template - bundle - script - test */,
+				E075228F13AB9F7400582A6A /* update_documents.js in Copy Utils Template - bundle - script - test */,
+				E075229013AB9F7400582A6A /* users_db.js in Copy Utils Template - bundle - script - test */,
+				E075229113AB9F7400582A6A /* utf8.js in Copy Utils Template - bundle - script - test */,
+				E075229213AB9F7400582A6A /* uuids.js in Copy Utils Template - bundle - script - test */,
+				E075229313AB9F7400582A6A /* view_collation.js in Copy Utils Template - bundle - script - test */,
+				E075229413AB9F7400582A6A /* view_collation_raw.js in Copy Utils Template - bundle - script - test */,
+				E075229513AB9F7400582A6A /* view_compaction.js in Copy Utils Template - bundle - script - test */,
+				E075229613AB9F7400582A6A /* view_conflicts.js in Copy Utils Template - bundle - script - test */,
+				E075229713AB9F7400582A6A /* view_errors.js in Copy Utils Template - bundle - script - test */,
+				E075229813AB9F7400582A6A /* view_include_docs.js in Copy Utils Template - bundle - script - test */,
+				E075229913AB9F7400582A6A /* view_multi_key_all_docs.js in Copy Utils Template - bundle - script - test */,
+				E075229A13AB9F7400582A6A /* view_multi_key_design.js in Copy Utils Template - bundle - script - test */,
+				E075229B13AB9F7400582A6A /* view_multi_key_temp.js in Copy Utils Template - bundle - script - test */,
+				E075229C13AB9F7400582A6A /* view_offsets.js in Copy Utils Template - bundle - script - test */,
+				E075229D13AB9F7400582A6A /* view_pagination.js in Copy Utils Template - bundle - script - test */,
+				E075229E13AB9F7400582A6A /* view_sandboxing.js in Copy Utils Template - bundle - script - test */,
+				E075229F13AB9F7400582A6A /* view_update_seq.js in Copy Utils Template - bundle - script - test */,
+				E07522A013AB9F7400582A6A /* view_xml.js in Copy Utils Template - bundle - script - test */,
+			);
+			name = "Copy Utils Template - bundle - script - test";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07522DC13ABA43D00582A6A /* Copy Utils Template */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Developer/Xcode/Templates/Couchbase/Couchbase Utils.xctemplate";
+			dstSubfolderSpec = 0;
+			files = (
+				E07522DD13ABA46D00582A6A /* TemplateInfo.plist in Copy Utils Template */,
+			);
+			name = "Copy Utils Template";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -317,6 +742,169 @@
 		E039FEE5139A98250040C70C /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Couchbase.bundle; path = ../MobileCouchbase/Products/Couchbase.bundle; sourceTree = "<group>"; };
 		E039FEE7139A98250040C70C /* libCouchbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCouchbase.a; path = ../MobileCouchbase/Products/libCouchbase.a; sourceTree = "<group>"; };
 		E039FEE8139A98250040C70C /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
+		E075214E13AB9BCC00582A6A /* _sidebar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _sidebar.html; sourceTree = "<group>"; };
+		E075214F13AB9BCC00582A6A /* config.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = config.html; sourceTree = "<group>"; };
+		E075215013AB9BCC00582A6A /* couch_tests.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = couch_tests.html; sourceTree = "<group>"; };
+		E075215113AB9BCC00582A6A /* custom_test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = custom_test.html; sourceTree = "<group>"; };
+		E075215213AB9BCC00582A6A /* database.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = database.html; sourceTree = "<group>"; };
+		E075215413AB9BCC00582A6A /* _admin_party.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _admin_party.html; sourceTree = "<group>"; };
+		E075215513AB9BCC00582A6A /* _change_password.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _change_password.html; sourceTree = "<group>"; };
+		E075215613AB9BCC00582A6A /* _compact_cleanup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _compact_cleanup.html; sourceTree = "<group>"; };
+		E075215713AB9BCC00582A6A /* _create_admin.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _create_admin.html; sourceTree = "<group>"; };
+		E075215813AB9BCC00582A6A /* _create_config.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _create_config.html; sourceTree = "<group>"; };
+		E075215913AB9BCC00582A6A /* _create_database.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _create_database.html; sourceTree = "<group>"; };
+		E075215A13AB9BCC00582A6A /* _database_security.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _database_security.html; sourceTree = "<group>"; };
+		E075215B13AB9BCC00582A6A /* _delete_database.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _delete_database.html; sourceTree = "<group>"; };
+		E075215C13AB9BCC00582A6A /* _delete_document.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _delete_document.html; sourceTree = "<group>"; };
+		E075215D13AB9BCC00582A6A /* _login.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _login.html; sourceTree = "<group>"; };
+		E075215E13AB9BCC00582A6A /* _save_view_as.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _save_view_as.html; sourceTree = "<group>"; };
+		E075215F13AB9BCC00582A6A /* _share_test_reports.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _share_test_reports.html; sourceTree = "<group>"; };
+		E075216013AB9BCC00582A6A /* _signup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _signup.html; sourceTree = "<group>"; };
+		E075216113AB9BCC00582A6A /* _upload_attachment.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = _upload_attachment.html; sourceTree = "<group>"; };
+		E075216213AB9BCC00582A6A /* document.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = document.html; sourceTree = "<group>"; };
+		E075216313AB9BCC00582A6A /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		E075216513AB9BCC00582A6A /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		E075216613AB9BCC00582A6A /* apply.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = apply.gif; sourceTree = "<group>"; };
+		E075216713AB9BCC00582A6A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		E075216813AB9BCC00582A6A /* cancel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cancel.gif; sourceTree = "<group>"; };
+		E075216913AB9BCC00582A6A /* compact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compact.png; sourceTree = "<group>"; };
+		E075216A13AB9BCC00582A6A /* delete-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-mini.png"; sourceTree = "<group>"; };
+		E075216B13AB9BCC00582A6A /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		E075216C13AB9BCC00582A6A /* grippie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = grippie.gif; sourceTree = "<group>"; };
+		E075216D13AB9BCC00582A6A /* hgrad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hgrad.gif; sourceTree = "<group>"; };
+		E075216E13AB9BCC00582A6A /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		E075216F13AB9BCC00582A6A /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load.png; sourceTree = "<group>"; };
+		E075217013AB9BCC00582A6A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E075217113AB9BCC00582A6A /* order-asc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "order-asc.gif"; sourceTree = "<group>"; };
+		E075217213AB9BCC00582A6A /* order-desc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "order-desc.gif"; sourceTree = "<group>"; };
+		E075217313AB9BCC00582A6A /* path.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = path.gif; sourceTree = "<group>"; };
+		E075217413AB9BCC00582A6A /* progress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = progress.gif; sourceTree = "<group>"; };
+		E075217513AB9BCC00582A6A /* rarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rarrow.png; sourceTree = "<group>"; };
+		E075217613AB9BCC00582A6A /* run-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "run-mini.png"; sourceTree = "<group>"; };
+		E075217713AB9BCC00582A6A /* run.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run.png; sourceTree = "<group>"; };
+		E075217813AB9BCC00582A6A /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running.png; sourceTree = "<group>"; };
+		E075217913AB9BCC00582A6A /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		E075217A13AB9BCC00582A6A /* sidebar-toggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebar-toggle.png"; sourceTree = "<group>"; };
+		E075217B13AB9BCC00582A6A /* spinner.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinner.gif; sourceTree = "<group>"; };
+		E075217C13AB9BCC00582A6A /* spinner_33.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinner_33.gif; sourceTree = "<group>"; };
+		E075217D13AB9BCC00582A6A /* spinner_6b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinner_6b.gif; sourceTree = "<group>"; };
+		E075217E13AB9BCC00582A6A /* test_failure.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test_failure.gif; sourceTree = "<group>"; };
+		E075217F13AB9BCC00582A6A /* test_success.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test_success.gif; sourceTree = "<group>"; };
+		E075218013AB9BCC00582A6A /* thead-key.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "thead-key.gif"; sourceTree = "<group>"; };
+		E075218113AB9BCC00582A6A /* thead.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thead.gif; sourceTree = "<group>"; };
+		E075218213AB9BCC00582A6A /* toggle-collapse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "toggle-collapse.gif"; sourceTree = "<group>"; };
+		E075218313AB9BCC00582A6A /* toggle-expand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "toggle-expand.gif"; sourceTree = "<group>"; };
+		E075218413AB9BCC00582A6A /* twisty.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = twisty.gif; sourceTree = "<group>"; };
+		E075218513AB9BCC00582A6A /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		E075218613AB9BCC00582A6A /* replicator.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = replicator.html; sourceTree = "<group>"; };
+		E075218813AB9BCC00582A6A /* base64.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = base64.js; sourceTree = "<group>"; };
+		E075218913AB9BCC00582A6A /* couch.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch.js; sourceTree = "<group>"; };
+		E075218A13AB9BCC00582A6A /* couch_test_runner.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch_test_runner.js; sourceTree = "<group>"; };
+		E075218B13AB9BCC00582A6A /* couch_tests.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch_tests.js; sourceTree = "<group>"; };
+		E075218C13AB9BCC00582A6A /* futon.browse.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = futon.browse.js; sourceTree = "<group>"; };
+		E075218D13AB9BCC00582A6A /* futon.format.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = futon.format.js; sourceTree = "<group>"; };
+		E075218E13AB9BCC00582A6A /* futon.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = futon.js; sourceTree = "<group>"; };
+		E075218F13AB9BCC00582A6A /* jquery-ui-1.8.11.custom.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "jquery-ui-1.8.11.custom.min.js"; sourceTree = "<group>"; };
+		E075219013AB9BCC00582A6A /* jquery.couch.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.couch.js; sourceTree = "<group>"; };
+		E075219113AB9BCC00582A6A /* jquery.dialog.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.dialog.js; sourceTree = "<group>"; };
+		E075219213AB9BCC00582A6A /* jquery.editinline.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.editinline.js; sourceTree = "<group>"; };
+		E075219313AB9BCC00582A6A /* jquery.form.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.form.js; sourceTree = "<group>"; };
+		E075219413AB9BCC00582A6A /* jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		E075219513AB9BCC00582A6A /* jquery.resizer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.resizer.js; sourceTree = "<group>"; };
+		E075219613AB9BCC00582A6A /* jquery.suggest.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.suggest.js; sourceTree = "<group>"; };
+		E075219713AB9BCC00582A6A /* json2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = json2.js; sourceTree = "<group>"; };
+		E075219913AB9BCC00582A6A /* jspec.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jspec.css; sourceTree = "<group>"; };
+		E075219A13AB9BCC00582A6A /* jspec.jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jspec.jquery.js; sourceTree = "<group>"; };
+		E075219B13AB9BCC00582A6A /* jspec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jspec.js; sourceTree = "<group>"; };
+		E075219C13AB9BCC00582A6A /* jspec.xhr.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jspec.xhr.js; sourceTree = "<group>"; };
+		E075219D13AB9BCC00582A6A /* oauth.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = oauth.js; sourceTree = "<group>"; };
+		E075219E13AB9BCC00582A6A /* sha1.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = sha1.js; sourceTree = "<group>"; };
+		E07521A013AB9BCC00582A6A /* all_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = all_docs.js; sourceTree = "<group>"; };
+		E07521A113AB9BCC00582A6A /* attachment_conflicts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachment_conflicts.js; sourceTree = "<group>"; };
+		E07521A213AB9BCC00582A6A /* attachment_names.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachment_names.js; sourceTree = "<group>"; };
+		E07521A313AB9BCC00582A6A /* attachment_paths.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachment_paths.js; sourceTree = "<group>"; };
+		E07521A413AB9BCC00582A6A /* attachment_ranges.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachment_ranges.js; sourceTree = "<group>"; };
+		E07521A513AB9BCC00582A6A /* attachment_views.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachment_views.js; sourceTree = "<group>"; };
+		E07521A613AB9BCC00582A6A /* attachments.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachments.js; sourceTree = "<group>"; };
+		E07521A713AB9BCC00582A6A /* attachments_multipart.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = attachments_multipart.js; sourceTree = "<group>"; };
+		E07521A813AB9BCC00582A6A /* auth_cache.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = auth_cache.js; sourceTree = "<group>"; };
+		E07521A913AB9BCC00582A6A /* basics.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = basics.js; sourceTree = "<group>"; };
+		E07521AA13AB9BCC00582A6A /* batch_save.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = batch_save.js; sourceTree = "<group>"; };
+		E07521AB13AB9BCC00582A6A /* bulk_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bulk_docs.js; sourceTree = "<group>"; };
+		E07521AC13AB9BCC00582A6A /* changes.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = changes.js; sourceTree = "<group>"; };
+		E07521AD13AB9BCC00582A6A /* compact.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = compact.js; sourceTree = "<group>"; };
+		E07521AE13AB9BCC00582A6A /* config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = config.js; sourceTree = "<group>"; };
+		E07521AF13AB9BCC00582A6A /* conflicts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = conflicts.js; sourceTree = "<group>"; };
+		E07521B013AB9BCC00582A6A /* content_negotiation.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content_negotiation.js; sourceTree = "<group>"; };
+		E07521B113AB9BCC00582A6A /* cookie_auth.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cookie_auth.js; sourceTree = "<group>"; };
+		E07521B213AB9BCC00582A6A /* copy_doc.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = copy_doc.js; sourceTree = "<group>"; };
+		E07521B313AB9BCC00582A6A /* delayed_commits.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = delayed_commits.js; sourceTree = "<group>"; };
+		E07521B413AB9BCC00582A6A /* design_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = design_docs.js; sourceTree = "<group>"; };
+		E07521B513AB9BCC00582A6A /* design_options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = design_options.js; sourceTree = "<group>"; };
+		E07521B613AB9BCC00582A6A /* design_paths.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = design_paths.js; sourceTree = "<group>"; };
+		E07521B713AB9BCC00582A6A /* erlang_views.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = erlang_views.js; sourceTree = "<group>"; };
+		E07521B813AB9BCC00582A6A /* etags_head.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = etags_head.js; sourceTree = "<group>"; };
+		E07521B913AB9BCC00582A6A /* etags_views.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = etags_views.js; sourceTree = "<group>"; };
+		E07521BA13AB9BCC00582A6A /* form_submit.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = form_submit.js; sourceTree = "<group>"; };
+		E07521BB13AB9BCC00582A6A /* http.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = http.js; sourceTree = "<group>"; };
+		E07521BC13AB9BCC00582A6A /* invalid_docids.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = invalid_docids.js; sourceTree = "<group>"; };
+		E07521BD13AB9BCC00582A6A /* jsonp.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jsonp.js; sourceTree = "<group>"; };
+		E07521BE13AB9BCC00582A6A /* large_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = large_docs.js; sourceTree = "<group>"; };
+		E07521BF13AB9BCC00582A6A /* list_views.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = list_views.js; sourceTree = "<group>"; };
+		E07521C013AB9BCC00582A6A /* lorem.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lorem.txt; sourceTree = "<group>"; };
+		E07521C113AB9BCC00582A6A /* lorem_b64.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = lorem_b64.txt; sourceTree = "<group>"; };
+		E07521C213AB9BCC00582A6A /* lots_of_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = lots_of_docs.js; sourceTree = "<group>"; };
+		E07521C313AB9BCC00582A6A /* method_override.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = method_override.js; sourceTree = "<group>"; };
+		E07521C413AB9BCC00582A6A /* multiple_rows.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = multiple_rows.js; sourceTree = "<group>"; };
+		E07521C513AB9BCC00582A6A /* oauth.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = oauth.js; sourceTree = "<group>"; };
+		E07521C613AB9BCC00582A6A /* proxyauth.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = proxyauth.js; sourceTree = "<group>"; };
+		E07521C713AB9BCC00582A6A /* purge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = purge.js; sourceTree = "<group>"; };
+		E07521C813AB9BCC00582A6A /* reader_acl.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reader_acl.js; sourceTree = "<group>"; };
+		E07521C913AB9BCC00582A6A /* recreate_doc.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = recreate_doc.js; sourceTree = "<group>"; };
+		E07521CA13AB9BCC00582A6A /* reduce.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reduce.js; sourceTree = "<group>"; };
+		E07521CB13AB9BCC00582A6A /* reduce_builtin.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reduce_builtin.js; sourceTree = "<group>"; };
+		E07521CC13AB9BCC00582A6A /* reduce_false.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reduce_false.js; sourceTree = "<group>"; };
+		E07521CD13AB9BCC00582A6A /* reduce_false_temp.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = reduce_false_temp.js; sourceTree = "<group>"; };
+		E07521CE13AB9BCC00582A6A /* replication.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = replication.js; sourceTree = "<group>"; };
+		E07521CF13AB9BCC00582A6A /* replicator_db.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = replicator_db.js; sourceTree = "<group>"; };
+		E07521D013AB9BCC00582A6A /* rev_stemming.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rev_stemming.js; sourceTree = "<group>"; };
+		E07521D113AB9BCC00582A6A /* rewrite.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = rewrite.js; sourceTree = "<group>"; };
+		E07521D213AB9BCC00582A6A /* security_validation.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = security_validation.js; sourceTree = "<group>"; };
+		E07521D313AB9BCC00582A6A /* show_documents.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = show_documents.js; sourceTree = "<group>"; };
+		E07521D413AB9BCC00582A6A /* stats.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = stats.js; sourceTree = "<group>"; };
+		E07521D513AB9BCC00582A6A /* update_documents.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = update_documents.js; sourceTree = "<group>"; };
+		E07521D613AB9BCC00582A6A /* users_db.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = users_db.js; sourceTree = "<group>"; };
+		E07521D713AB9BCC00582A6A /* utf8.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = utf8.js; sourceTree = "<group>"; };
+		E07521D813AB9BCC00582A6A /* uuids.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = uuids.js; sourceTree = "<group>"; };
+		E07521D913AB9BCC00582A6A /* view_collation.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_collation.js; sourceTree = "<group>"; };
+		E07521DA13AB9BCC00582A6A /* view_collation_raw.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_collation_raw.js; sourceTree = "<group>"; };
+		E07521DB13AB9BCC00582A6A /* view_compaction.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_compaction.js; sourceTree = "<group>"; };
+		E07521DC13AB9BCC00582A6A /* view_conflicts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_conflicts.js; sourceTree = "<group>"; };
+		E07521DD13AB9BCC00582A6A /* view_errors.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_errors.js; sourceTree = "<group>"; };
+		E07521DE13AB9BCC00582A6A /* view_include_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_include_docs.js; sourceTree = "<group>"; };
+		E07521DF13AB9BCC00582A6A /* view_multi_key_all_docs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_multi_key_all_docs.js; sourceTree = "<group>"; };
+		E07521E013AB9BCC00582A6A /* view_multi_key_design.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_multi_key_design.js; sourceTree = "<group>"; };
+		E07521E113AB9BCC00582A6A /* view_multi_key_temp.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_multi_key_temp.js; sourceTree = "<group>"; };
+		E07521E213AB9BCC00582A6A /* view_offsets.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_offsets.js; sourceTree = "<group>"; };
+		E07521E313AB9BCC00582A6A /* view_pagination.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_pagination.js; sourceTree = "<group>"; };
+		E07521E413AB9BCC00582A6A /* view_sandboxing.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_sandboxing.js; sourceTree = "<group>"; };
+		E07521E513AB9BCC00582A6A /* view_update_seq.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_update_seq.js; sourceTree = "<group>"; };
+		E07521E613AB9BCC00582A6A /* view_xml.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = view_xml.js; sourceTree = "<group>"; };
+		E07521E713AB9BCC00582A6A /* session.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = session.html; sourceTree = "<group>"; };
+		E07521E913AB9BCC00582A6A /* couch_js_class_methods_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch_js_class_methods_spec.js; sourceTree = "<group>"; };
+		E07521EA13AB9BCC00582A6A /* couch_js_instance_methods_1_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch_js_instance_methods_1_spec.js; sourceTree = "<group>"; };
+		E07521EB13AB9BCC00582A6A /* couch_js_instance_methods_2_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch_js_instance_methods_2_spec.js; sourceTree = "<group>"; };
+		E07521EC13AB9BCC00582A6A /* couch_js_instance_methods_3_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = couch_js_instance_methods_3_spec.js; sourceTree = "<group>"; };
+		E07521ED13AB9BCC00582A6A /* custom_helpers.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = custom_helpers.js; sourceTree = "<group>"; };
+		E07521EE13AB9BCC00582A6A /* jquery_couch_js_class_methods_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery_couch_js_class_methods_spec.js; sourceTree = "<group>"; };
+		E07521EF13AB9BCC00582A6A /* jquery_couch_js_instance_methods_1_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery_couch_js_instance_methods_1_spec.js; sourceTree = "<group>"; };
+		E07521F013AB9BCC00582A6A /* jquery_couch_js_instance_methods_2_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery_couch_js_instance_methods_2_spec.js; sourceTree = "<group>"; };
+		E07521F113AB9BCC00582A6A /* jquery_couch_js_instance_methods_3_spec.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery_couch_js_instance_methods_3_spec.js; sourceTree = "<group>"; };
+		E07521F213AB9BCC00582A6A /* run.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = run.html; sourceTree = "<group>"; };
+		E07521F313AB9BCC00582A6A /* status.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = status.html; sourceTree = "<group>"; };
+		E07521F513AB9BCC00582A6A /* jquery-ui-1.8.11.custom.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "jquery-ui-1.8.11.custom.css"; sourceTree = "<group>"; };
+		E07521F613AB9BCC00582A6A /* layout.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = layout.css; sourceTree = "<group>"; };
+		E07521F813AB9C5200582A6A /* TemplateInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -333,6 +921,7 @@
 		E0351DCA138FFAB0003AACFE = {
 			isa = PBXGroup;
 			children = (
+				E075214C13AB9BCC00582A6A /* Vendor */,
 				E02209C3138FFC6300FB8402 /* Libraries */,
 				E0351DD7138FFB2D003AACFE /* Templates */,
 			);
@@ -341,6 +930,7 @@
 		E0351DD7138FFB2D003AACFE /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				E07521F713AB9C5200582A6A /* Couchbase Utils.xctemplate */,
 				E0351DD8138FFB2D003AACFE /* Couchbase Base.xctemplate */,
 				E0351DDB138FFB2D003AACFE /* Couchbase Navigation-based Application.xctemplate */,
 				E0351DE2138FFB2D003AACFE /* Couchbase OpenGL ES Application.xctemplate */,
@@ -481,6 +1071,248 @@
 			);
 			name = include;
 			path = ../MobileCouchbase/Products/include;
+			sourceTree = "<group>";
+		};
+		E075214C13AB9BCC00582A6A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E075214D13AB9BCC00582A6A /* CouchDBUtils */,
+			);
+			name = Vendor;
+			path = ../Vendor;
+			sourceTree = "<group>";
+		};
+		E075214D13AB9BCC00582A6A /* CouchDBUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E075214E13AB9BCC00582A6A /* _sidebar.html */,
+				E075214F13AB9BCC00582A6A /* config.html */,
+				E075215013AB9BCC00582A6A /* couch_tests.html */,
+				E075215113AB9BCC00582A6A /* custom_test.html */,
+				E075215213AB9BCC00582A6A /* database.html */,
+				E075215313AB9BCC00582A6A /* dialog */,
+				E075216213AB9BCC00582A6A /* document.html */,
+				E075216313AB9BCC00582A6A /* favicon.ico */,
+				E075216413AB9BCC00582A6A /* image */,
+				E075218513AB9BCC00582A6A /* index.html */,
+				E075218613AB9BCC00582A6A /* replicator.html */,
+				E075218713AB9BCC00582A6A /* script */,
+				E07521E713AB9BCC00582A6A /* session.html */,
+				E07521E813AB9BCC00582A6A /* spec */,
+				E07521F313AB9BCC00582A6A /* status.html */,
+				E07521F413AB9BCC00582A6A /* style */,
+			);
+			path = CouchDBUtils;
+			sourceTree = "<group>";
+		};
+		E075215313AB9BCC00582A6A /* dialog */ = {
+			isa = PBXGroup;
+			children = (
+				E075215413AB9BCC00582A6A /* _admin_party.html */,
+				E075215513AB9BCC00582A6A /* _change_password.html */,
+				E075215613AB9BCC00582A6A /* _compact_cleanup.html */,
+				E075215713AB9BCC00582A6A /* _create_admin.html */,
+				E075215813AB9BCC00582A6A /* _create_config.html */,
+				E075215913AB9BCC00582A6A /* _create_database.html */,
+				E075215A13AB9BCC00582A6A /* _database_security.html */,
+				E075215B13AB9BCC00582A6A /* _delete_database.html */,
+				E075215C13AB9BCC00582A6A /* _delete_document.html */,
+				E075215D13AB9BCC00582A6A /* _login.html */,
+				E075215E13AB9BCC00582A6A /* _save_view_as.html */,
+				E075215F13AB9BCC00582A6A /* _share_test_reports.html */,
+				E075216013AB9BCC00582A6A /* _signup.html */,
+				E075216113AB9BCC00582A6A /* _upload_attachment.html */,
+			);
+			path = dialog;
+			sourceTree = "<group>";
+		};
+		E075216413AB9BCC00582A6A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				E075216513AB9BCC00582A6A /* add.png */,
+				E075216613AB9BCC00582A6A /* apply.gif */,
+				E075216713AB9BCC00582A6A /* bg.png */,
+				E075216813AB9BCC00582A6A /* cancel.gif */,
+				E075216913AB9BCC00582A6A /* compact.png */,
+				E075216A13AB9BCC00582A6A /* delete-mini.png */,
+				E075216B13AB9BCC00582A6A /* delete.png */,
+				E075216C13AB9BCC00582A6A /* grippie.gif */,
+				E075216D13AB9BCC00582A6A /* hgrad.gif */,
+				E075216E13AB9BCC00582A6A /* key.png */,
+				E075216F13AB9BCC00582A6A /* load.png */,
+				E075217013AB9BCC00582A6A /* logo.png */,
+				E075217113AB9BCC00582A6A /* order-asc.gif */,
+				E075217213AB9BCC00582A6A /* order-desc.gif */,
+				E075217313AB9BCC00582A6A /* path.gif */,
+				E075217413AB9BCC00582A6A /* progress.gif */,
+				E075217513AB9BCC00582A6A /* rarrow.png */,
+				E075217613AB9BCC00582A6A /* run-mini.png */,
+				E075217713AB9BCC00582A6A /* run.png */,
+				E075217813AB9BCC00582A6A /* running.png */,
+				E075217913AB9BCC00582A6A /* save.png */,
+				E075217A13AB9BCC00582A6A /* sidebar-toggle.png */,
+				E075217B13AB9BCC00582A6A /* spinner.gif */,
+				E075217C13AB9BCC00582A6A /* spinner_33.gif */,
+				E075217D13AB9BCC00582A6A /* spinner_6b.gif */,
+				E075217E13AB9BCC00582A6A /* test_failure.gif */,
+				E075217F13AB9BCC00582A6A /* test_success.gif */,
+				E075218013AB9BCC00582A6A /* thead-key.gif */,
+				E075218113AB9BCC00582A6A /* thead.gif */,
+				E075218213AB9BCC00582A6A /* toggle-collapse.gif */,
+				E075218313AB9BCC00582A6A /* toggle-expand.gif */,
+				E075218413AB9BCC00582A6A /* twisty.gif */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		E075218713AB9BCC00582A6A /* script */ = {
+			isa = PBXGroup;
+			children = (
+				E075218813AB9BCC00582A6A /* base64.js */,
+				E075218913AB9BCC00582A6A /* couch.js */,
+				E075218A13AB9BCC00582A6A /* couch_test_runner.js */,
+				E075218B13AB9BCC00582A6A /* couch_tests.js */,
+				E075218C13AB9BCC00582A6A /* futon.browse.js */,
+				E075218D13AB9BCC00582A6A /* futon.format.js */,
+				E075218E13AB9BCC00582A6A /* futon.js */,
+				E075218F13AB9BCC00582A6A /* jquery-ui-1.8.11.custom.min.js */,
+				E075219013AB9BCC00582A6A /* jquery.couch.js */,
+				E075219113AB9BCC00582A6A /* jquery.dialog.js */,
+				E075219213AB9BCC00582A6A /* jquery.editinline.js */,
+				E075219313AB9BCC00582A6A /* jquery.form.js */,
+				E075219413AB9BCC00582A6A /* jquery.js */,
+				E075219513AB9BCC00582A6A /* jquery.resizer.js */,
+				E075219613AB9BCC00582A6A /* jquery.suggest.js */,
+				E075219713AB9BCC00582A6A /* json2.js */,
+				E075219813AB9BCC00582A6A /* jspec */,
+				E075219D13AB9BCC00582A6A /* oauth.js */,
+				E075219E13AB9BCC00582A6A /* sha1.js */,
+				E075219F13AB9BCC00582A6A /* test */,
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		E075219813AB9BCC00582A6A /* jspec */ = {
+			isa = PBXGroup;
+			children = (
+				E075219913AB9BCC00582A6A /* jspec.css */,
+				E075219A13AB9BCC00582A6A /* jspec.jquery.js */,
+				E075219B13AB9BCC00582A6A /* jspec.js */,
+				E075219C13AB9BCC00582A6A /* jspec.xhr.js */,
+			);
+			path = jspec;
+			sourceTree = "<group>";
+		};
+		E075219F13AB9BCC00582A6A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				E07521A013AB9BCC00582A6A /* all_docs.js */,
+				E07521A113AB9BCC00582A6A /* attachment_conflicts.js */,
+				E07521A213AB9BCC00582A6A /* attachment_names.js */,
+				E07521A313AB9BCC00582A6A /* attachment_paths.js */,
+				E07521A413AB9BCC00582A6A /* attachment_ranges.js */,
+				E07521A513AB9BCC00582A6A /* attachment_views.js */,
+				E07521A613AB9BCC00582A6A /* attachments.js */,
+				E07521A713AB9BCC00582A6A /* attachments_multipart.js */,
+				E07521A813AB9BCC00582A6A /* auth_cache.js */,
+				E07521A913AB9BCC00582A6A /* basics.js */,
+				E07521AA13AB9BCC00582A6A /* batch_save.js */,
+				E07521AB13AB9BCC00582A6A /* bulk_docs.js */,
+				E07521AC13AB9BCC00582A6A /* changes.js */,
+				E07521AD13AB9BCC00582A6A /* compact.js */,
+				E07521AE13AB9BCC00582A6A /* config.js */,
+				E07521AF13AB9BCC00582A6A /* conflicts.js */,
+				E07521B013AB9BCC00582A6A /* content_negotiation.js */,
+				E07521B113AB9BCC00582A6A /* cookie_auth.js */,
+				E07521B213AB9BCC00582A6A /* copy_doc.js */,
+				E07521B313AB9BCC00582A6A /* delayed_commits.js */,
+				E07521B413AB9BCC00582A6A /* design_docs.js */,
+				E07521B513AB9BCC00582A6A /* design_options.js */,
+				E07521B613AB9BCC00582A6A /* design_paths.js */,
+				E07521B713AB9BCC00582A6A /* erlang_views.js */,
+				E07521B813AB9BCC00582A6A /* etags_head.js */,
+				E07521B913AB9BCC00582A6A /* etags_views.js */,
+				E07521BA13AB9BCC00582A6A /* form_submit.js */,
+				E07521BB13AB9BCC00582A6A /* http.js */,
+				E07521BC13AB9BCC00582A6A /* invalid_docids.js */,
+				E07521BD13AB9BCC00582A6A /* jsonp.js */,
+				E07521BE13AB9BCC00582A6A /* large_docs.js */,
+				E07521BF13AB9BCC00582A6A /* list_views.js */,
+				E07521C013AB9BCC00582A6A /* lorem.txt */,
+				E07521C113AB9BCC00582A6A /* lorem_b64.txt */,
+				E07521C213AB9BCC00582A6A /* lots_of_docs.js */,
+				E07521C313AB9BCC00582A6A /* method_override.js */,
+				E07521C413AB9BCC00582A6A /* multiple_rows.js */,
+				E07521C513AB9BCC00582A6A /* oauth.js */,
+				E07521C613AB9BCC00582A6A /* proxyauth.js */,
+				E07521C713AB9BCC00582A6A /* purge.js */,
+				E07521C813AB9BCC00582A6A /* reader_acl.js */,
+				E07521C913AB9BCC00582A6A /* recreate_doc.js */,
+				E07521CA13AB9BCC00582A6A /* reduce.js */,
+				E07521CB13AB9BCC00582A6A /* reduce_builtin.js */,
+				E07521CC13AB9BCC00582A6A /* reduce_false.js */,
+				E07521CD13AB9BCC00582A6A /* reduce_false_temp.js */,
+				E07521CE13AB9BCC00582A6A /* replication.js */,
+				E07521CF13AB9BCC00582A6A /* replicator_db.js */,
+				E07521D013AB9BCC00582A6A /* rev_stemming.js */,
+				E07521D113AB9BCC00582A6A /* rewrite.js */,
+				E07521D213AB9BCC00582A6A /* security_validation.js */,
+				E07521D313AB9BCC00582A6A /* show_documents.js */,
+				E07521D413AB9BCC00582A6A /* stats.js */,
+				E07521D513AB9BCC00582A6A /* update_documents.js */,
+				E07521D613AB9BCC00582A6A /* users_db.js */,
+				E07521D713AB9BCC00582A6A /* utf8.js */,
+				E07521D813AB9BCC00582A6A /* uuids.js */,
+				E07521D913AB9BCC00582A6A /* view_collation.js */,
+				E07521DA13AB9BCC00582A6A /* view_collation_raw.js */,
+				E07521DB13AB9BCC00582A6A /* view_compaction.js */,
+				E07521DC13AB9BCC00582A6A /* view_conflicts.js */,
+				E07521DD13AB9BCC00582A6A /* view_errors.js */,
+				E07521DE13AB9BCC00582A6A /* view_include_docs.js */,
+				E07521DF13AB9BCC00582A6A /* view_multi_key_all_docs.js */,
+				E07521E013AB9BCC00582A6A /* view_multi_key_design.js */,
+				E07521E113AB9BCC00582A6A /* view_multi_key_temp.js */,
+				E07521E213AB9BCC00582A6A /* view_offsets.js */,
+				E07521E313AB9BCC00582A6A /* view_pagination.js */,
+				E07521E413AB9BCC00582A6A /* view_sandboxing.js */,
+				E07521E513AB9BCC00582A6A /* view_update_seq.js */,
+				E07521E613AB9BCC00582A6A /* view_xml.js */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		E07521E813AB9BCC00582A6A /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				E07521E913AB9BCC00582A6A /* couch_js_class_methods_spec.js */,
+				E07521EA13AB9BCC00582A6A /* couch_js_instance_methods_1_spec.js */,
+				E07521EB13AB9BCC00582A6A /* couch_js_instance_methods_2_spec.js */,
+				E07521EC13AB9BCC00582A6A /* couch_js_instance_methods_3_spec.js */,
+				E07521ED13AB9BCC00582A6A /* custom_helpers.js */,
+				E07521EE13AB9BCC00582A6A /* jquery_couch_js_class_methods_spec.js */,
+				E07521EF13AB9BCC00582A6A /* jquery_couch_js_instance_methods_1_spec.js */,
+				E07521F013AB9BCC00582A6A /* jquery_couch_js_instance_methods_2_spec.js */,
+				E07521F113AB9BCC00582A6A /* jquery_couch_js_instance_methods_3_spec.js */,
+				E07521F213AB9BCC00582A6A /* run.html */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
+		E07521F413AB9BCC00582A6A /* style */ = {
+			isa = PBXGroup;
+			children = (
+				E07521F513AB9BCC00582A6A /* jquery-ui-1.8.11.custom.css */,
+				E07521F613AB9BCC00582A6A /* layout.css */,
+			);
+			path = style;
+			sourceTree = "<group>";
+		};
+		E07521F713AB9C5200582A6A /* Couchbase Utils.xctemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E07521F813AB9C5200582A6A /* TemplateInfo.plist */,
+			);
+			path = "Couchbase Utils.xctemplate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

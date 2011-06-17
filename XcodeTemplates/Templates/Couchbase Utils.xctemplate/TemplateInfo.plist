@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.couchbase.utils</string>
+	<key>Description</key>
+	<string>This template provides the files for the _utils handler (futon)</string>	
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Description</key>
+			<string>Indicates whether the application should include CouchDB Utils (futon).</string>
+			<key>Identifier</key>
+			<string>couchDBUtils</string>
+			<key>Name</key>
+			<string>Include CouchDB Utils (futon)</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>	
+					<key>Definitions</key>
+					<dict>
+						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:copyCouchDBUtils</key>
+						<string>
+//on first launch copy CouchDBUtils to Documents/utils
+NSFileManager *NSFm= [NSFileManager defaultManager];
+NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+NSString *utilsDir = [documentsDirectory stringByAppendingString:@"/utils"];
+
+if(![NSFm fileExistsAtPath:utilsDir]) {
+    NSString* utilsBundlePath = [[NSBundle mainBundle] pathForResource:@"CouchDBUtils" ofType:@"bundle"];
+    	
+    NSError *copyError = nil;
+    [NSFm copyItemAtPath:utilsBundlePath toPath:utilsDir error:&amp;copyError];
+    if(copyError != nil) {
+        NSLog(@"Error: Copy CouchDBUtils to Documents/utils folder failed");
+    }
+}
+</string>
+						<key>CouchDBUtils.bundle</key>
+						<dict>
+							<key>Path</key>
+							<string>CouchDBUtils.bundle</string>
+							<key>Group</key>
+							<string>Supporting Files</string>
+						</dict>
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:copyCouchDBUtils</string>					
+						<string>CouchDBUtils.bundle</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
+
