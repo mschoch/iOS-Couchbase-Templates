@@ -8,10 +8,10 @@ echo "Building..."
 mkdir -p "${TARGET_TEMP_DIR}"
 cd "${TARGET_TEMP_DIR}"
 echo "Downloading file to ${TARGET_TEMP_DIR}"
-`curl -O "http://hexeditreality.com/sites/default/files/iOSCouchbase.zip"`
+`curl -O "http://jchris.iriscouch.com/files/iOS-Couchbase/iOSCouchbase-template-dependencies-beta.zip"`
 cd "${PROJECT_DIR}/Products"
 echo "Extracting files to ${PROJECT_DIR}/Products"
-unzip  "${TARGET_TEMP_DIR}/iOSCouchbase.zip"
+unzip  "${TARGET_TEMP_DIR}/iOSCouchbase-template-dependencies-beta.zip"
 echo "Done..."
 
 
