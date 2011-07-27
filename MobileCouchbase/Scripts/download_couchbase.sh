@@ -8,10 +8,10 @@ echo "Building..."
 mkdir -p "${TARGET_TEMP_DIR}"
 cd "${TARGET_TEMP_DIR}"
 echo "Downloading file to ${TARGET_TEMP_DIR}"
-`curl -O "http://jchris.iriscouch.com/files/iOS-Couchbase/iOSCouchbase-template-dependencies-beta.zip"`
+`curl -O -L "https://github.com/downloads/couchbaselabs/iOS-Couchbase/Couchbase.framework.zip"`
 cd "${PROJECT_DIR}/Products"
 echo "Extracting files to ${PROJECT_DIR}/Products"
-unzip  "${TARGET_TEMP_DIR}/iOSCouchbase-template-dependencies-beta.zip"
+unzip  "${TARGET_TEMP_DIR}/Couchbase.framework.zip"
 echo "Done..."
 
 
@@ -19,9 +19,7 @@ echo "Done..."
 
 cleanAction () {
 echo "Cleaning..."
-rm -rvf "${PROJECT_DIR}/Products/Couchbase.bundle"
-rm -rvf "${PROJECT_DIR}/Products/include"
-rm -rvf "${PROJECT_DIR}/Products/libCouchbase.a"
+rm -rvf "${PROJECT_DIR}/Products/Couchbase.framework"
 echo "Done..."
 }
 

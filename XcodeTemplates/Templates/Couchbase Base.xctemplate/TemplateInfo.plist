@@ -50,7 +50,13 @@
 			<integer>1</integer>
 		</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:startCouchbase</key>
-		<string>[Couchbase startCouchbase:self]; // pass optional URL or port
+		<string>CouchbaseEmbeddedServer* cb = [[CouchbaseEmbeddedServer alloc] init];
+    cb.delegate = self;
+
+	if (![cb start]) {
+        NSLog(@"OMG: Couchbase couldn't start! Exiting! Error = %@", cb.error);
+        exit(1);    // Panic!
+    }
 </string>		
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</key>
 		<string>-(void)couchbaseDidStart:(NSURL *)serverURL {
@@ -60,45 +66,40 @@
     NSLog(@"Couch is ready!");
 }
 		</string>
-		<key>Couchbase.h</key>
-		<dict>
-			<key>Path</key>
-			<string>Couchbase.h</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
-		<key>Couchbase.bundle</key>
+		<key>Couchbase.framework</key>
 		<dict>
 			<key>Group</key>
-			<string>Supporting Files</string>
+			<string>Frameworks</string>
 			<key>Path</key>
-			<string>Couchbase.bundle</string>
+			<string>Couchbase.framework</string>
 		</dict>								
-		<key>libCouchbase.a</key>
-		<dict>
-			<key>Group</key>
-			<string>Libraries</string>
-			<key>Path</key>
-			<string>libCouchbase.a</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
 	</dict>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:import:Couchbase.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:import:Couchbase/CouchbaseEmbeddedServer.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchivars</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:window</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchend</string>		
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:startCouchbase</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</string>
-		<string>Couchbase.h</string>
-		<string>Couchbase.bundle</string>		
-		<string>libCouchbase.a</string>
+		<string>Couchbase.framework</string>		
 	</array>
 	<key>Targets</key>
 	<array>
 		<dict>
+			<key>BuildPhases</key> <!-- Create Standart Template:  Select Project Editor then Build Phases. -->
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string> <!-- Add Build Phase Custom Script -->
+					<key>Name</key>
+					<string>Copy CouchDB</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>rsync -a \"${SRCROOT}/${PROJECT_NAME}/Couchbase.framework/CouchbaseResources\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"</string>					
+				</dict>
+			</array>		
 			<key>Configurations</key>
 			<dict>
 				<key>Release</key>
@@ -109,14 +110,12 @@
 			</dict>
 			<key>Frameworks</key>
 			<array>
-				<string>UIKit</string>
-				<string>Foundation</string>
-				<string>CoreGraphics</string>
+				<string>Couchbase</string>				
 			</array>
 			<key>SharedSettings</key>
 			<dict>
 				<key>OTHER_LDFLAGS</key>
-				<string>-lstdc++ -lCouchbase -L"${SRCROOT}/___PACKAGENAME___"</string>
+				<string>-lstdc++</string>
 			</dict>
 		</dict>
 	</array>

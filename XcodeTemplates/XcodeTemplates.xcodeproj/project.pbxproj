@@ -12,7 +12,6 @@
 			buildConfigurationList = E0351DD4138FFAF4003AACFE /* Build configuration list for PBXAggregateTarget "Install Project Templates" */;
 			buildPhases = (
 				E0351E24138FFB64003AACFE /* Copy Base Template */,
-				E0C230E213915F2600622500 /* Copy Couchbase.buncle to Base Template */,
 				E02209D01390008700FB8402 /* Copy Navigation-based Application Template */,
 				E02209D6139000DC00FB8402 /* Copy OpenGL ES Application Template */,
 				E02209E31390014F00FB8402 /* Copy Split View-based Application Template */,
@@ -94,8 +93,7 @@
 		E0220A1E1390029500FB8402 /* TemplateIcon.icns in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E17138FFB2D003AACFE /* TemplateIcon.icns */; };
 		E0220A1F1390029500FB8402 /* TemplateInfo.plist in Copy View-based Application Template */ = {isa = PBXBuildFile; fileRef = E0351E18138FFB2D003AACFE /* TemplateInfo.plist */; };
 		E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E0351DDA138FFB2D003AACFE /* TemplateInfo.plist */; };
-		E039FEEA139A994D0040C70C /* Couchbase.h in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E039FEE8139A98250040C70C /* Couchbase.h */; };
-		E039FEEB139A99510040C70C /* libCouchbase.a in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E039FEE7139A98250040C70C /* libCouchbase.a */; };
+		E04FCAD413E0AF2D0033C4EB /* Couchbase.framework in Copy Base Template */ = {isa = PBXBuildFile; fileRef = E04FCAD313E0AF2D0033C4EB /* Couchbase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -240,8 +238,7 @@
 			dstSubfolderSpec = 0;
 			files = (
 				E0351E25138FFB8D003AACFE /* TemplateInfo.plist in Copy Base Template */,
-				E039FEEA139A994D0040C70C /* Couchbase.h in Copy Base Template */,
-				E039FEEB139A99510040C70C /* libCouchbase.a in Copy Base Template */,
+				E04FCAD413E0AF2D0033C4EB /* Couchbase.framework in Copy Base Template */,
 			);
 			name = "Copy Base Template";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,18 +311,14 @@
 		E0351E21138FFB2D003AACFE /* MainWindow_iPhone_Universal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_iPhone_Universal.xib; sourceTree = "<group>"; };
 		E0351E22138FFB2D003AACFE /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = TemplateIcon.icns; sourceTree = "<group>"; };
 		E0351E23138FFB2D003AACFE /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
-		E039FEE5139A98250040C70C /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Couchbase.bundle; path = ../MobileCouchbase/Products/Couchbase.bundle; sourceTree = "<group>"; };
-		E039FEE7139A98250040C70C /* libCouchbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCouchbase.a; path = ../MobileCouchbase/Products/libCouchbase.a; sourceTree = "<group>"; };
-		E039FEE8139A98250040C70C /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
+		E04FCAD313E0AF2D0033C4EB /* Couchbase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Couchbase.framework; path = ../MobileCouchbase/Products/Couchbase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E02209C3138FFC6300FB8402 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				E039FEE5139A98250040C70C /* Couchbase.bundle */,
-				E039FEE6139A98250040C70C /* include */,
-				E039FEE7139A98250040C70C /* libCouchbase.a */,
+				E04FCAD313E0AF2D0033C4EB /* Couchbase.framework */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -474,15 +467,6 @@
 			path = "Couchbase Window-based Application.xctemplate";
 			sourceTree = "<group>";
 		};
-		E039FEE6139A98250040C70C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E039FEE8139A98250040C70C /* Couchbase.h */,
-			);
-			name = include;
-			path = ../MobileCouchbase/Products/include;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -503,23 +487,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E0C230E213915F2600622500 /* Copy Couchbase.buncle to Base Template */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Couchbase.buncle to Base Template";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "rsync -a \"${PROJECT_DIR}/../MobileCouchbase/Products/Couchbase.bundle\" \"${USER_LIBRARY_DIR}/Developer/Xcode/Templates/Couchbase/Couchbase Base.xctemplate/\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		E0351DD1138FFAB0003AACFE /* Debug */ = {

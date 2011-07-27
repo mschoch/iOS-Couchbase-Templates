@@ -7,35 +7,15 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		E039FEE1139A97D10040C70C /* Couchbase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Couchbase.bundle; sourceTree = "<group>"; };
-		E039FEE3139A97D10040C70C /* Couchbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Couchbase.h; sourceTree = "<group>"; };
-		E039FEE4139A97D10040C70C /* libCouchbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCouchbase.a; sourceTree = "<group>"; };
+		E04FCAD213E0AF070033C4EB /* Couchbase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Couchbase.framework; path = Products/Couchbase.framework; sourceTree = "<group>"; };
 		E0C2309A139156D800622500 /* download_couchbase.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download_couchbase.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		E039FEDF139A97D10040C70C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E039FEE1139A97D10040C70C /* Couchbase.bundle */,
-				E039FEE2139A97D10040C70C /* include */,
-				E039FEE4139A97D10040C70C /* libCouchbase.a */,
-			);
-			path = Products;
-			sourceTree = "<group>";
-		};
-		E039FEE2139A97D10040C70C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E039FEE3139A97D10040C70C /* Couchbase.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		E0C23077139155CF00622500 = {
 			isa = PBXGroup;
 			children = (
-				E039FEDF139A97D10040C70C /* Products */,
+				E04FCAD213E0AF070033C4EB /* Couchbase.framework */,
 				E0C23099139156D800622500 /* Scripts */,
 			);
 			sourceTree = "<group>";
