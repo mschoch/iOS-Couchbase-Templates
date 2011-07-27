@@ -97,7 +97,7 @@
 					<key>ShellPath</key>
 					<string>/bin/sh</string>
 					<key>ShellScript</key>
-					<string>rsync -a \"${SRCROOT}/${PROJECT_NAME}/Couchbase.framework/CouchbaseResources\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"</string>					
+					<string>rsync -a "${SRCROOT}/${PROJECT_NAME}/Couchbase.framework/CouchbaseResources" "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"</string>					
 				</dict>
 			</array>		
 			<key>Configurations</key>
